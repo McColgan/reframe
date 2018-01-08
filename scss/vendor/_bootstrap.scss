@@ -5445,8 +5445,9 @@ button.close {
   position: relative;
   max-width: 1200px;
   margin: 3em auto;
-  background: rgba(21, 153, 214, 0.6);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background: rgba(0, 137, 0, 0.5)
+  //background: rgba(21, 153, 214, 0.6);
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
 
@@ -5473,7 +5474,7 @@ button.close {
 }
 
 // CAROUSEL MEDIA QUERIES
-@media (max-width: 1050px){
+@media (max-width: 1200px){
   .carousel{
     border: none;
   }
@@ -5482,9 +5483,14 @@ button.close {
   }
 }
 
-@media (max-width: 880px){
+@media (max-width: 1000px){
   .carousel-item{
     min-height: 27em;
+  }
+}
+@media (max-width: 800px){
+  .carousel-item{
+    min-height: 29em;
   }
 }
 

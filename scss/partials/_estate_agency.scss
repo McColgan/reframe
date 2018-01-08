@@ -25,7 +25,10 @@
 .estate-section1{
     height: auto;
     width: 100%;
-    background: rgba(21, 153, 214, 0.6);
+    //background: rgba(21, 153, 214, 0.6);
+    background: rgba(0, 137, 0, 0.5);
+    border-top: 2px solid rgba(243, 243, 243, 0.5);
+    border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     position: relative;
     margin: 3em 0;
     padding: 0;
@@ -50,7 +53,7 @@
     font-weight: 200;
     padding: 0 1em;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1.5em;
     width: 50%;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -58,29 +61,78 @@
 }
 .estate-h2{
     font-weight: 200;
-    padding: 2em 1em;
+    padding: 5em 1em 2em 1em;
     text-align: center;
-    font-size: 2em;
-    line-height: 1.5em;
+    font-size: 2.5em;
+    
 }
 .estate-p{
     color: #f3f3f3;
-    padding: 1em 5%;
+    
+    //background: rgba(0, 137, 0, 0.5);
+    //background: rgba(21, 153, 214, 0.6);
+    padding: 1em;
     font-size: 1.6em;
+    line-height: 2em;
     margin: 0 auto;
     text-align: center;
     font-weight: 200;
     max-width: 1200px;
     z-index: 1;
-    a{
-        color: #f3f3f3;
-        font-weight: 400;
-    }
-    a:hover{
-        color: #d4d4d4;
+}
+.tel-icon1{
+    height: 64px;
+    width: 64px;
+    padding: 0;
+    margin:0;
+    bottom: 20em;
+    left: 30%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../images/tel_icon1.png);
+    background-size: 64px 64px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.mail-icon1{
+    height: 64px;
+    width: 64px;
+    padding: 0;
+    margin: 0;
+    bottom: 20em;
+    left: 70%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../images/mail_icon1.png);
+    background-size: 64px 64px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.nicholas-tel{
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10.5em;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.nicholas-mail a{
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10.5em;
+    left: 70%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #f3f3f3;
+    &:hover{
+        color: #1599d6;
     }
 }
-
 .carousel-item p{
     color: #f3f3f3;
     padding: 2em 14%;
@@ -128,6 +180,27 @@
         font-size: 0.9em;
     }
 }
+@media( max-width: 720px){
+    .nicholas-tel{
+        font-size: 1.1em;
+        left: 20%;
+        bottom: 13em;
+    }
+    .nicholas-mail a{
+        font-size: 1.1em;
+        bottom: 13em;
+    }
+    
+    .tel-icon1{
+        left: 20%;
+        background-size: 45px 45px;
+        bottom: 17em;
+    }
+    .mail-icon1{
+        background-size: 45px 45px;
+        bottom: 17em;
+    }
+}
 
 @media (max-width: 640px){
     .estate-img{
@@ -138,10 +211,24 @@
     .estate-h2{
         font-size: 1.5em;
         font-weight: 300;
+        padding-bottom: 3em;
     }
 
     .estate-p{
         font-weight: 300;
+    }
+    .nicholas-tel{
+        bottom: 9em;
+    }
+    .nicholas-mail a{
+        bottom: 9em;
+    }
+    
+    .tel-icon1{
+        bottom: 11em;
+    }
+    .mail-icon1{
+        bottom: 11em;
     }
 }
 

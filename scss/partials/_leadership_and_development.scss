@@ -89,9 +89,12 @@
 }
 @media (max-width: 768px){
     .leadership-container{
-        .leadership-p1,
-        .leadership-p2{
+        .leadership-p1{
             font-size: 1.1em;
+            text-align: initial;
+        }
+        .leadership-list{
+            font-size: 1.2em;
         }
     }
 }

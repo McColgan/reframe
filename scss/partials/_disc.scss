@@ -20,7 +20,7 @@
 .disc-p1,
 .disc-p2{
     position: relative;
-    font-size: 1.8em;
+    font-size: 2em;
     padding: 0 5%;
     margin: 1em auto;
     font-weight: 200;
@@ -29,6 +29,7 @@
 }
 .disc-p2{
     padding-bottom: 5em;
+    font-size: 2em
 }
 .disc-flexbox,
 .disc-flexbox-2{
@@ -112,6 +113,7 @@
         color: #1599d6;
     }
 }
+
 @media (max-width: 720px){
     .disc-header{
         width: 250px;
@@ -141,15 +143,19 @@
         padding-bottom: 7em;
     }
     .kingsley-tel{
-        font-size: 1.2em;
+        font-size: 1.1em;
         left: 20%;
     }
     .kingsley-mail a{
-        font-size: 1.2em;
+        font-size: 1.1em;
        
     }
     
     .tel-icon{
         left: 20%;
+        background-size: 45px 45px;
+    }
+    .mail-icon{
+        background-size: 45px 45px;
     }
 }
