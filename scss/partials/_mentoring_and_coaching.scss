@@ -10,6 +10,7 @@
     background-size: contain;
     background-attachment: fixed;
     //background: #f3f3f3;
+    border-bottom: 2px solid #f3f3f3;
     font-family: 'Work Sans', sans-serif;
     color: #1599D6;&:before{
         content: '';
@@ -42,7 +43,7 @@
     padding: 0;
     margin: 0 auto;
     position: absolute;
-    top: 9em;
+    top: 10em;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -77,8 +78,10 @@
     width: 30%;
     position: relative;
     //border: 2px solid #f3f3f3;
-    background: rgba(21, 153, 214, 0.7);
+    //background: rgba(21, 153, 214, 0.7);
+    background: rgba(0, 112, 0, 0.8);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
     h1{
         font-size: 1.3em;
         text-align: center;
@@ -92,6 +95,7 @@
         background: #f3f3f3;
         color: #1599D6;
         height: 4em;
+        
     }
     p{
         text-align: center;
@@ -99,6 +103,7 @@
         font-weight: 300;
         font-size: 1em;
         color: #f8f8f8;
+        
     }
     .business-png{
         background-image: url(../images/business.png);
@@ -143,10 +148,12 @@
     
 }
 .executives{
-    background: rgba(21, 153, 214, 0.7);
+    background: rgba(0, 112, 0, 0.8);
+    //background: rgba(21, 153, 214, 0.7);
 }
 .individuals{
-    background: rgba(21, 153, 214, 0.7)
+    background: rgba(0, 112, 0, 0.8);
+    //background: rgba(21, 153, 214, 0.7)
 }
 
 

@@ -30,24 +30,28 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
-    margin: 0 auto;
+    margin: 2em auto;
     max-height: 35em;
 }
 
 .box-item{
-    margin: 3em auto 0 auto;
+    margin: 3em 1em;
     padding: 0;
-    width: 45%;
-    
-    //min-height: 27em;
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
     position: relative;
-    //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 2px solid #1599d6;
     overflow: hidden;
     img{
         width: 100%;
+        padding-top: 3em;
         display: block;
+        
     }
 }
+
 .box-item:hover .box-desc{
     transform: translateY(0%);
 }
@@ -73,6 +77,7 @@
     top: 0;
     width: 100%;
     display: block;
+    z-index: 3;
 }
 .box-desc{
     font-size: 1.2em;
@@ -81,16 +86,15 @@
     bottom: 0;
     //bottom: 6em;
     color: #f3f3f3;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 112, 0, 0.6);
     left: 0em;
     right: 0em;
-    padding: 1em 2em 4em 2em;
+    padding: 11em 2em 4em 2em;
     transform: translateY(150%);
     transition: all ease-in-out 250ms;
     p{
         
-        font-size: 1.3em;
-        
+        font-size: 1.6em;
         font-weight: 200;
         justify-content: center;
         text-align: center;
@@ -169,15 +173,15 @@
         position: relative;
         background: #1599D6;
         font-family: 'Work Sans', sans-serif;
-        font-weight: 100;
+        font-weight: 400;
     }
     p{
         
         padding: 2em 10%;
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-weight: 300;
         font-family: 'Work Sans', sans-serif;
-        font-weight: 200;   
+        font-weight: 300;   
     }
 }
 .nicholas-modal-content{
@@ -202,15 +206,15 @@
         position: relative;
         background: #1599D6;
         font-family: 'Work Sans', sans-serif;
-        font-weight: 100;
+        font-weight: 400;
     }
     p{
         
         padding: 3em 10%;
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-weight: 300;
         font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
+        font-weight: 300;
     }
 }
 .close1,
@@ -233,12 +237,17 @@
 
 
 
-@media (max-width: 800px){
-    
+@media (max-width: 900px){
+    .box-desc{
+        p{
+            font-size: 1.2em;
+        }
+    }
     .view-more-button{
-        font-size: 1.3em;
+        font-size: 1.2em;
         padding: 0.35em 1em; 
     }
+
 }
 
 @media (max-width: 680px){
@@ -247,14 +256,22 @@
     }
     .about-flexbox{
         flex-direction: column;
-        min-height: 60em;
+        margin: 2em auto;
         width: 100%;
+        min-height: 50em;
+        
     }
     .box-item{
-        width: 100%;
+        width: 70%;
+        margin: 2em auto;
+        min-height: 400px;
+        img{
+            padding-top: 2em;
+            
+        }
     }
     .box-desc{
-        padding: 1em 1em 3.5em 1em;
+        padding: 11em 2em 4em 2em;
         p{
             font-size: 1.1em;
         }

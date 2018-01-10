@@ -19,14 +19,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/estate_bg1.jpeg);
+    background-image: url(../images/estate_bg1.jpg);
     background-attachment: fixed;
 }
 .estate-section1{
     height: auto;
     width: 100%;
     //background: rgba(21, 153, 214, 0.6);
-    background: rgba(0, 137, 0, 0.5);
+    background: rgba(0, 112, 0, 0.6);
     border-top: 2px solid rgba(243, 243, 243, 0.5);
     border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     position: relative;
@@ -36,6 +36,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
 }
 .estate-img{
     width: 500px;
@@ -47,28 +48,49 @@
     border-radius: 2px;
     padding: 0;
     margin: 3em 0;
-    
+    position: relative;
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+}
+.estate-img-text{
+    display: block;
+    position: absolute;
+    padding: 1em;
+    text-align: center;
+    background: rgba(21, 153, 214, 0.9);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
 }
 .estate-h1{
     font-weight: 200;
-    padding: 0 1em;
+    padding: 0 1em 0 1em;
     text-align: center;
     font-size: 2.5em;
     line-height: 1.5em;
     width: 50%;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    
+    font-family: 'Work Sans', sans-serif;
 }
 .estate-h2{
     font-weight: 200;
-    padding: 5em 1em 2em 1em;
+    padding: 1em;
     text-align: center;
     font-size: 2.5em;
-    
+    font-family: 'Work Sans', sans-serif;
+}
+.estate-h3{
+    font-weight: 200;
+    padding: 6em 2em 2em 2em;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Work Sans', sans-serif;
 }
 .estate-p{
     color: #f3f3f3;
-    
+    font-family: 'Work Sans', sans-serif;
     //background: rgba(0, 137, 0, 0.5);
     //background: rgba(21, 153, 214, 0.6);
     padding: 1em;
@@ -117,6 +139,7 @@
     bottom: 10.5em;
     left: 30%;
     transform: translateX(-50%);
+    font-family: 'Work Sans', sans-serif;
 }
 .nicholas-mail a{
     font-size: 1.6em;
@@ -129,6 +152,7 @@
     transform: translateX(-50%);
     text-decoration: none;
     color: #f3f3f3;
+    font-family: 'Work Sans', sans-serif;
     &:hover{
         color: #1599d6;
     }
@@ -144,6 +168,26 @@
     line-height: 2em;
 }
 
+.estate-logos-outer{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    background: red;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.estate-logo{
+    width: 100px;
+    height: 100px;
+    background: plum;
+    margin: 0 0.5em;
+}
 @media (max-width: 1050px){
     .estate-section1{
         position: relative;
@@ -207,8 +251,13 @@
         width: 100vw;
         height: 320px;
     }
+    .estate-img-text{
+        font-size: 0.9em;
+        
+    }
     .estate-h1,
-    .estate-h2{
+    .estate-h2,
+    .estate-h3{
         font-size: 1.5em;
         font-weight: 300;
         padding-bottom: 3em;
@@ -221,7 +270,8 @@
         bottom: 9em;
     }
     .nicholas-mail a{
-        bottom: 9em;
+        bottom: 10em;
+        font-size: 1em;
     }
     
     .tel-icon1{

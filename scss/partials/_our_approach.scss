@@ -62,7 +62,7 @@
     margin: 0 10vw;
     padding: 0.5em 0;
     //border: 2px solid #f8f8f8;
-    background: #1599D6;
+    //background: rgba(0, 112, 0, 0.8);
 }
 
 /* Slider */
@@ -191,7 +191,9 @@
     }
     .customer-logos{
         margin: 0;
-        background: rgba(21, 153, 214, 0.6);
+        background: rgba(0, 112, 0, 0.8);
+        border-top: 2px solid rgba(243, 243, 243, 0.5);
+        border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     }
 }
 

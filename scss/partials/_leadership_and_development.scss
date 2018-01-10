@@ -14,56 +14,79 @@
     width: 100%;
     max-width: 1200px;
     height: auto;
-    //background: #1599D6;
+    background: #1599D6;
     position: relative;
-    padding: 2em;
+    padding: 0;
     margin: 2em auto;
 }
 .leadership-p1{
     padding: 1em;
-    margin: 0;
-    left: 0;
-    max-width: 40%;
-    font-size: 1.4em;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6em;
     font-weight: 200;
-    
-    height: 30em;
+
+
 }
 .leadership-p2{
-    padding: 1em;
+    padding: 0;
     margin: 0;
-    top: 2em;
-    max-width: 50%;
-    right: 0;
-    position: absolute;
-    font-size: 1.4em;
-    font-weight: 300;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 200;
     
     
 }
 .leadership-list{
     color: #f8f8f8;
-    padding: 1em 0;
-    margin:  1.5em 0;
-    top: 6em;
-    right: 5%;
-    position: absolute;
+    padding: 0;
+    margin: 4em auto;
+    text-align: center;
     font-size: 1.4em;
     font-weight: 200;
     //border: 2px solid #f3f3f3;
+    li{
+        display: inline-block;
+    }
 }
-@media (max-width: 870px){
+.ahf-case-study{
+    margin: 0;
+    padding: 0.5em 1em 1em 1em ;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 112, 0, 0.8);
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+}
+.ahf-logo{
+    display: inline-block;
+    height: 63px;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-image: url(../images/ahf_logo.png);
+    background-size: 100px 63px;
+    transform: translateY(0.5em);
+}
+
+.list-line{
+    font-family: sans-serif;
+    font-weight: 800;
+}
+@media (max-width: 1050px){
     .leadership-container{
         height: auto;
     }
     .leadership-p1{
         margin: 0 auto;
-        padding: 2em 0;
+        padding: 1em 0;
         position: relative;
         max-width: 90vw;
-        left: auto;
         text-align: center;
-        height: auto;
+        font-size: 1.4em;
     }
     .leadership-p2{
         top: auto;
@@ -73,18 +96,24 @@
         position: relative;
         text-align: center;
         max-width: 90vw;
+        font-size: 1.4em;
     }
     .leadership-list{
         position: relative;
-        right: auto;
-        top: auto;
         margin: 0 auto;
-        max-width: 24em;
-        width: 70vw;
+        font-size: 1.4em;
         li{
             margin: 0;
             padding: 0;
         }
+    }
+    .ahf-case-study{
+        font-size: 1.4em;
+        margin: 2em 0 0 0;
+        line-height: 2.5em;
+    }
+    .ahf-logo{
+        transform: translateY(1em);
     }
 }
 @media (max-width: 768px){
@@ -93,8 +122,28 @@
             font-size: 1.1em;
             text-align: initial;
         }
+        .leadership-p2{
+            font-size: 1.1em;
+            text-align: initial;
+        }
         .leadership-list{
             font-size: 1.2em;
+            li{
+                display: block;
+            }
+        }
+        .list-line{
+            display: none;
         }
     }
+    .ahf-case-study{
+        font-size: 1.1em;
+    }
+    .ahf-logo{
+        width: 50px;
+        height: 32px;
+        background-size: 50px 32px;
+        transform: translateY(0.5em);
+    }
+
 }

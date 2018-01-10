@@ -28,7 +28,7 @@
   background-size: cover;
   &:before{
     content: '';
-    background-image: linear-gradient(#1599D6, rgba(21, 153, 214, 0.95), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.5));
+    background-image: linear-gradient(hsl(199, 82%, 46%), rgba(21, 153, 214, 0.95), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.3));
     opacity: 1;
     position: absolute;
     //background-attachment: fixed;
@@ -43,7 +43,7 @@
     background: #1599D6;
     margin: 0;
     padding: 0;
-    position: relative;  
+    position: relative; 
     }
     .reframe{
       color: #f8f8f8;
@@ -113,7 +113,7 @@
     }
     .start-button{
       position: absolute;
-      background: rgba(21, 153, 214, 0.5);
+      background: rgba(0, 112, 0, 0.6);
       color: #f8f8f8;
       padding: 0.5em 1em;
       text-align: center;

@@ -5443,9 +5443,11 @@ button.close {
 
 .carousel {
   position: relative;
-  max-width: 1200px;
+  //max-width: 1200px;
   margin: 3em auto;
-  background: rgba(0, 137, 0, 0.5)
+  background: rgba(0, 137, 0, 0.5);
+  border-top: 2px solid rgba(243, 243, 243, 0.5);
+  border-bottom: 2px solid rgba(243, 243, 243, 0.5);
   //background: rgba(21, 153, 214, 0.6);
   //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
@@ -5463,9 +5465,9 @@ button.close {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.7s ease-out;
+  transition: transform 0.7s ease-out;
+  transition: transform 0.7s ease-out, -webkit-transform 0.7s ease-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -5475,9 +5477,7 @@ button.close {
 
 // CAROUSEL MEDIA QUERIES
 @media (max-width: 1200px){
-  .carousel{
-    border: none;
-  }
+  
   .carousel-item{
       min-height: 22em;
   }

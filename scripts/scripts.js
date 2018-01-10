@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('#nav-icon').click(function(){
     $('.site-nav').toggleClass('site-nav--open', 700);
     $(this).toggleClass('open');
-    $('.showcase, .our-approach, .about-us, .leadership, .disc, .sales-management, .mentoring, .estate-agency').toggleClass('blur-filter');
+    //$('.showcase, .our-approach, .about-us, .leadership, .disc, .sales-management, .mentoring, .estate-agency').toggleClass('blur-filter');
 
   });
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
     var wScroll = $(window).scrollTop();
     $('.showcase-outer').css('top',(wScroll * 0.04)+'em');
     $('.frame').css('top',(wScroll * 0.02)+'em');
-    $('.hand').css('top',(wScroll * 0.033)+'em');
+    $('.hand').css('top',(wScroll * 0.03)+'em');
     
   }
 
