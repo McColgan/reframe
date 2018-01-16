@@ -158,7 +158,7 @@
     margin: auto;
     padding: 1em;
     border: 2px solid #f3f3f3;
-    width: 70%;
+    width: 80%;
     height: 80%;
     overflow-y: auto;
     -webkit-animation-duration: 1.5s;
@@ -177,11 +177,12 @@
     }
     p{
         
-        padding: 2em 10%;
+        padding: 2em 5%;
         font-size: 1.2em;
         font-weight: 300;
         font-family: 'Work Sans', sans-serif;
-        font-weight: 300;   
+        font-weight: 300;
+        line-height: 1.8em;   
     }
 }
 .nicholas-modal-content{
@@ -210,11 +211,12 @@
     }
     p{
         
-        padding: 3em 10%;
+        padding: 3em 5%;
         font-size: 1.2em;
         font-weight: 300;
         font-family: 'Work Sans', sans-serif;
         font-weight: 300;
+        line-height: 1.8em;
     }
 }
 .close1,
@@ -238,33 +240,43 @@
 
 
 @media (max-width: 900px){
+    .name{
+        font-size: 1.2em;
+    }
+
+    .box-item{
+        img{
+            padding: 1em 0 0 0;
+        }
+    }
     .box-desc{
         p{
             font-size: 1.2em;
         }
     }
     .view-more-button{
-        font-size: 1.2em;
-        padding: 0.35em 1em; 
+        font-size: 1em;
+        min-width: 7em;
     }
 
 }
 
-@media (max-width: 680px){
+@media (max-width: 640px){
     .about-us-h1{
         font-size: 2em;
     }
     .about-flexbox{
         flex-direction: column;
-        margin: 2em auto;
+        margin: 4em auto;
         width: 100%;
         min-height: 50em;
         
     }
     .box-item{
         width: 70%;
-        margin: 2em auto;
-        min-height: 400px;
+        margin: 1em auto;
+        min-height: none;
+        max-height: 380px;
         img{
             padding-top: 2em;
             
@@ -276,13 +288,7 @@
             font-size: 1.1em;
         }
     }
-    .view-more-button{
-        font-size: 1em;
-        min-width: 8em;
-    }
-    .name{
-        font-size: 1.5em;
-    }
+    
     .kingsley-modal-content,
     .nicholas-modal-content{
         width: 90%;
@@ -296,8 +302,17 @@
             font-weight: 300;
         }
     }
-    
 }
+
+@media (max-width: 480px){
+    .about-flexbox{
+        margin: 2em auto;
+    }
+    .box-item{
+        width: 100%;
+    }
+}
+
 
 
 

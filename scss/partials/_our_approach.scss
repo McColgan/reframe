@@ -172,8 +172,8 @@
             background: rgba(21, 153, 214, 0.6);
         }
         .our-approach-p{
-            font-size: 1.1em;
-            line-height: 1.7em;
+            font-size: 1em;
+            line-height: 2em;
             background: rgba(21, 153, 214, 0.6);
             padding: 2em 5%;
             margin: 1em auto;
@@ -191,11 +191,10 @@
     }
     .customer-logos{
         margin: 0;
-        background: rgba(0, 112, 0, 0.8);
-        border-top: 2px solid rgba(243, 243, 243, 0.5);
-        border-bottom: 2px solid rgba(243, 243, 243, 0.5);
+        
     }
 }
+
 
 @media (max-width: 1050px){
     .our-approach{
