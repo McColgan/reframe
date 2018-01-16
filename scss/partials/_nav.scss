@@ -131,7 +131,7 @@
 .site-nav li:focus,
 .site-nav li:active{
     background: rgba(243, 243, 243, 1);
-    
+    border-top: none;
     color: #1599D6;
     //border: 2px solid #1599D6;
     -moz-transition: all ease-in-out 700ms;
@@ -165,14 +165,14 @@
     border-radius: 5px;
 }
 .site-nav a::before{
-    border-bottom: 3px solid rgb(0, 112, 0);
-    border-left: 3px solid rgb(0, 112, 0);
+    border-bottom: 2px solid rgb(0, 112, 0);
+    border-left: 2px solid rgb(0, 112, 0);
     transform-origin: 100% 0%;
     border-radius: 5px;
 }
 .site-nav a::after{
-    border-top: 3px solid rgb(0, 112, 0);
-    border-right: 3px solid rgb(0, 112, 0);
+    border-top: 2px solid rgb(0, 112, 0);
+    border-right: 2px solid rgb(0, 112, 0);
     transform-origin: 0% 100%;
     border-radius: 5px;
 }

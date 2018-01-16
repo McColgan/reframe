@@ -30,17 +30,18 @@
 }
 .leadership-p2{
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
     text-align: center;
-    font-size: 1.6em;
-    font-weight: 200;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     
     
 }
 .leadership-list{
     color: #f8f8f8;
     padding: 0;
-    margin: 4em auto;
+    margin: 2em auto;
     text-align: center;
     font-size: 1.4em;
     font-weight: 200;
@@ -91,11 +92,11 @@
     .leadership-p2{
         top: auto;
         margin: 0 auto;
-        padding: 2em 1em;
+        padding: 1em 0;
         right: auto;
         position: relative;
         text-align: center;
-        max-width: 90vw;
+        //max-width: 90vw;
         font-size: 1.4em;
     }
     .leadership-list{
@@ -127,7 +128,7 @@
             text-align: initial;
         }
         .leadership-list{
-            font-size: 1.2em;
+            font-size: 1.1em;
             li{
                 display: block;
             }

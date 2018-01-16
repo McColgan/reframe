@@ -27,17 +27,46 @@
     width: 100%;
     //background: rgba(21, 153, 214, 0.6);
     background: rgba(0, 112, 0, 0.6);
-    border-top: 2px solid rgba(243, 243, 243, 0.5);
-    border-bottom: 2px solid rgba(243, 243, 243, 0.5);
+    border-top: 2px solid rgba(243, 243, 243, 0.2);
+    //border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     position: relative;
-    margin: 3em 0;
+    margin: 4em 0 0 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+    position: relative;
 }
+.estate-section2{
+    height: auto;
+    padding: 0;
+    width: 100%;
+    background: rgba(21, 153, 214, 0.6);
+    //border-top: 2px solid rgba(243, 243, 243, 0.5);
+    border-bottom: 2px solid rgba(243, 243, 243, 0.2);
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    video{
+        padding: 1em 1em 2.5em 1em;
+        margin: 0 0 0 5%;
+    }
+}
+.estate2-h1{
+    font-weight: 200;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    width: 50%;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Work Sans', sans-serif;
+}
+
 .estate-img{
     width: 500px;
     height: 375px;
@@ -49,7 +78,7 @@
     padding: 0;
     margin: 3em 0;
     position: relative;
-    border: 2px solid #f3f3f3;
+    //border: 2px solid #f3f3f3;
     border-radius: 5px;
 }
 .estate-img-text{
@@ -71,7 +100,7 @@
     font-size: 2.5em;
     line-height: 1.5em;
     width: 50%;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Work Sans', sans-serif;
 }
 .estate-h2{
@@ -80,6 +109,7 @@
     text-align: center;
     font-size: 2.5em;
     font-family: 'Work Sans', sans-serif;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
 .estate-h3{
     font-weight: 200;
@@ -87,6 +117,7 @@
     text-align: center;
     font-size: 2.5em;
     font-family: 'Work Sans', sans-serif;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
 .estate-p{
     color: #f3f3f3;
@@ -190,15 +221,30 @@
 }
 @media (max-width: 1050px){
     .estate-section1{
-        position: relative;
-        margin: 2.5em 0 1.5em 0;
-        display: flex;
-        flex-direction: row;
+        margin: 2.5em 0 0 0;
         padding: 0;
         justify-content: center;
         flex-direction: column;
     }
+    .estate-section2{
+        justify-content: center;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        video{
+            padding: 1em 0 2.5em 0;
+            margin: 0;
+            width: 70%;
+            height: auto;
+            
+        }
+    }
     .estate-h1{
+        width: 90%;
+        padding: 2em 0 0 0;
+        margin: 0 auto;
+        font-weight: 100;
+    }
+    .estate2-h1{
         width: 90%;
         padding: 2em 0;
         margin: 0 auto;
@@ -247,6 +293,11 @@
 }
 
 @media (max-width: 640px){
+    .estate-section2{
+        video{
+            width: 100%;
+        }
+    }
     .estate-img{
         width: 100vw;
         height: 320px;
@@ -261,10 +312,11 @@
     }
     .estate-h1,
     .estate-h2,
-    .estate-h3{
+    .estate-h3,
+    .estate2-h1{
         font-size: 1.5em;
-        font-weight: 300;
-        padding-bottom: 3em;
+        font-weight: 200;
+        //padding-bottom: 3em;
     }
 
     .estate-p{

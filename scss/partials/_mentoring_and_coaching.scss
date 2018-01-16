@@ -34,6 +34,7 @@
     font-family:'Work Sans', sans-serif;
     font-weight: 300;
     color: #f3f3f3;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }
 .mentoring-line-break{
     display: block;
@@ -50,15 +51,13 @@
 .mentoring-p1{
     font-weight: 200;
     font-size: 2em;
-    //line-height: 2em;
     padding: 1em 5%;
     max-width: 1000px;
     position: relative;
     text-align: center;
     margin: 2em auto;
-    //text-transform: uppercase;
     color: #f3f3f3;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .mentoring-flexbox{
     width: 95%;
@@ -77,7 +76,7 @@
     min-height: 35em;
     width: 30%;
     position: relative;
-    //border: 2px solid #f3f3f3;
+    border: 2px solid rgba(243, 243, 243, 0.1);
     //background: rgba(21, 153, 214, 0.7);
     background: rgba(0, 112, 0, 0.8);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -95,7 +94,6 @@
         background: #f3f3f3;
         color: #1599D6;
         height: 4em;
-        
     }
     p{
         text-align: center;
@@ -103,7 +101,6 @@
         font-weight: 300;
         font-size: 1em;
         color: #f8f8f8;
-        
     }
     .business-png{
         background-image: url(../images/business.png);
