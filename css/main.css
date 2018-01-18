@@ -14,7 +14,7 @@
 .estate-outer {
   width: 100%;
   height: auto;
-  padding: 2em 0 0 0;
+  padding: 2em 0 1em 0;
   margin: 0;
   position: relative;
   background-position: center;
@@ -26,7 +26,7 @@
 .estate-section1 {
   height: auto;
   width: 100%;
-  background: rgba(0, 112, 0, 0.6);
+  background: rgba(0, 137, 0, 0.4);
   border-top: 2px solid rgba(243, 243, 243, 0.2);
   position: relative;
   margin: 4em 0 0 0;
@@ -41,7 +41,7 @@
   height: auto;
   padding: 0;
   width: 100%;
-  background: rgba(21, 153, 214, 0.6);
+  background: rgba(31, 183, 253, 0.6);
   border-bottom: 2px solid rgba(243, 243, 243, 0.2);
   position: relative;
   margin: 0;
@@ -114,7 +114,8 @@
   font-family: 'Work Sans', sans-serif;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5); }
 
-.estate-p {
+.estate-p,
+.estate-p2 {
   color: #f3f3f3;
   font-family: 'Work Sans', sans-serif;
   padding: 1em;
@@ -194,20 +195,25 @@
   width: 100%;
   max-width: 1200px;
   height: auto;
-  padding: 0;
+  padding: 0.5em;
   margin: 0 auto;
-  background: red;
+  background: rgba(31, 183, 253, 0.6);
+  border: 2px solid rgba(243, 243, 243, 0.2);
+  border-top: none;
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .estate-logo {
-  width: 100px;
-  height: 100px;
-  background: plum;
-  margin: 0 0.5em; }
+  width: auto;
+  height: 45px;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .estate-logo img {
+    width: auto;
+    height: 45px; }
 
 @media (max-width: 1050px) {
   .estate-section1 {
@@ -226,7 +232,7 @@
       height: auto; }
   .estate-h1 {
     width: 90%;
-    padding: 2em 0 0 0;
+    padding: 2em 0;
     margin: 0 auto;
     font-weight: 100; }
   .estate2-h1 {
@@ -246,25 +252,34 @@
   .estate-p {
     font-size: 1.1em;
     line-height: 1.7em;
+    padding: 1em 5%;
+    text-align: initial; }
+  .estate-p2 {
+    font-size: 1.1em;
+    line-height: 1.7em;
     padding: 1em 5%; }
   .carousel-item p {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+  .estate-logo {
+    height: 35px; }
+    .estate-logo img {
+      height: 35px; } }
 
 @media (max-width: 720px) {
   .nicholas-tel {
     font-size: 1.1em;
     left: 20%;
-    bottom: 13em; }
+    bottom: 18em; }
   .nicholas-mail a {
     font-size: 1.1em;
-    bottom: 13em; }
+    bottom: 18em; }
   .tel-icon1 {
     left: 20%;
     background-size: 45px 45px;
-    bottom: 17em; }
+    bottom: 23em; }
   .mail-icon1 {
     background-size: 45px 45px;
-    bottom: 17em; } }
+    bottom: 23em; } }
 
 @media (max-width: 640px) {
   .estate-section2 video {
@@ -280,21 +295,28 @@
     font-size: 0.9em; }
   .estate-h1,
   .estate-h2,
-  .estate-h3,
   .estate2-h1 {
     font-size: 1.5em;
     font-weight: 200; }
-  .estate-p {
+  .estate-h3 {
+    font-size: 1.7em;
+    font-weight: 200; }
+  .estate-p,
+  .estate-p2 {
     font-weight: 300; }
+  .estate-logo {
+    height: 30px; }
+    .estate-logo img {
+      height: 30px; }
   .nicholas-tel {
-    bottom: 9em; }
+    bottom: 11em; }
   .nicholas-mail a {
-    bottom: 10em;
+    bottom: 12.2em;
     font-size: 1em; }
   .tel-icon1 {
-    bottom: 11em; }
+    bottom: 14em; }
   .mail-icon1 {
-    bottom: 11em; } }
+    bottom: 14em; } }
 
 .leadership {
   width: 100%;
@@ -386,7 +408,6 @@
     font-size: 1.4em; }
   .leadership-list {
     position: relative;
-    margin: 0 auto;
     font-size: 1.4em; }
     .leadership-list li {
       margin: 0;
@@ -404,7 +425,7 @@
     text-align: initial; }
   .leadership-container .leadership-p2 {
     font-size: 1.1em;
-    text-align: initial; }
+    font-weight: 300; }
   .leadership-container .leadership-list {
     font-size: 1.1em; }
     .leadership-container .leadership-list li {
@@ -736,11 +757,12 @@
   .mentoring {
     background-position: bottom -15em right -10em; }
   .mentoring-line-break {
-    width: 8em; }
+    width: 8em;
+    top: 7em; }
   .mentoring-box {
     min-height: 32em; }
   .mentoring-h1 {
-    font-size: 2em; }
+    font-size: 1.7em; }
   .mentoring-p1 {
     font-size: 1.3em; } }
 
@@ -1953,16 +1975,87 @@ html, body {
 .modal-logo {
   display: block;
   position: relative;
+  margin: 0;
   padding: 0;
-  bottom: 0;
   background-image: url(../images/reframeLogoTree.png);
   width: 80px;
   height: 91px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80px 91px;
-  left: 50%;
-  transform: translateX(-50%); }
+  float: left; }
+
+.contact-outer {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.contact {
+  height: 100%;
+  width: 33.33%;
+  padding: 1em;
+  margin: 0;
+  position: relative; }
+
+.contact-p {
+  font-family: 'Work Sans',sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+  font-size: 1.1em;
+  color: #f3f3f3;
+  font-weight: 200; }
+
+.contact-tel-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(../images/tel_icon1.png);
+  background-size: 40px 40px;
+  position: relative; }
+
+.contact-email-icon,
+.contact-email-icon::before,
+.contact-email-icon::after {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(../images/mail_icon1.png);
+  background-size: 40px 40px;
+  position: relative; }
+
+.contact-email-icon:hover,
+.contact-email-icon:focus,
+.contact-email-icon:active {
+  background-image: url(../images/mail_icon2.png);
+  transition: all ease-out 500ms; }
+
+.contact-linkedin-icon,
+.contact-linkedin-icon::before,
+.contact-linkedin-icon::after {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(../images/linkedin_hover.png);
+  background-size: 40px 40px;
+  position: relative; }
+
+.contact-linkedin-icon:hover,
+.contact-linkedin-icon:focus,
+.contact-linkedin-icon:focus {
+  background-image: url(../images/linkedin.png);
+  transition: all ease-out 500ms; }
 
 .kingsley-modal-content {
   background: #1599D6;
@@ -1971,7 +2064,7 @@ html, body {
   padding: 1em;
   border: 2px solid #f3f3f3;
   width: 80%;
-  height: 80%;
+  height: 90%;
   overflow-y: auto;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s; }
@@ -1986,7 +2079,7 @@ html, body {
     background: #1599D6;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400; }
-  .kingsley-modal-content p {
+  .kingsley-modal-content .content-p {
     padding: 2em 5%;
     font-size: 1.2em;
     font-weight: 300;
@@ -2001,7 +2094,7 @@ html, body {
   padding: 1em;
   border: 2px solid #f3f3f3;
   width: 80%;
-  height: 80%;
+  height: 90%;
   overflow-y: auto;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
@@ -2016,7 +2109,7 @@ html, body {
     background: #1599D6;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400; }
-  .nicholas-modal-content p {
+  .nicholas-modal-content .content-p {
     padding: 3em 5%;
     font-size: 1.2em;
     font-weight: 300;
@@ -2050,7 +2143,9 @@ html, body {
     font-size: 1.2em; }
   .view-more-button {
     font-size: 1em;
-    min-width: 7em; } }
+    min-width: 7em; }
+  .contact .contact-p {
+    font-size: 0.9em; } }
 
 @media (max-width: 640px) {
   .about-us-h1 {
@@ -2074,16 +2169,31 @@ html, body {
       font-size: 1.1em; }
   .kingsley-modal-content,
   .nicholas-modal-content {
-    width: 90%; }
+    width: 85%; }
     .kingsley-modal-content h1,
     .nicholas-modal-content h1 {
       font-size: 1.25em;
       font-weight: 300; }
-    .kingsley-modal-content p,
-    .nicholas-modal-content p {
+    .kingsley-modal-content .content-p,
+    .nicholas-modal-content .content-p {
       font-size: 1em;
       padding: 3em 2.5%;
-      font-weight: 300; } }
+      font-weight: 300; }
+  .contact-outer {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto; }
+  .contact {
+    width: 100%;
+    margin-bottom: 0 auto 2em auto; }
+    .contact .contact-p {
+      border-bottom: 1px solid rgba(243, 243, 243, 0.4);
+      height: auto;
+      padding: 0.5em 0;
+      margin: 0 auto;
+      width: 90%;
+      font-size: 1.2em; } }
 
 @media (max-width: 480px) {
   .about-flexbox {
@@ -6874,10 +6984,12 @@ button.close {
 
 .carousel {
   position: relative;
-  margin: 3em auto;
-  background: rgba(0, 137, 0, 0.5);
-  border-top: 2px solid rgba(243, 243, 243, 0.2);
-  border-bottom: 2px solid rgba(243, 243, 243, 0.2); }
+  padding: 0;
+  max-width: 1200px;
+  margin: 3em auto 0 auto;
+  background: rgba(0, 137, 0, 0.4);
+  border: 2px solid rgba(243, 243, 243, 0.2);
+  border-bottom: none; }
 
 .carousel-inner {
   position: relative;
@@ -6898,12 +7010,6 @@ button.close {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   min-height: 20em; }
-
-@media (min-width: 1200px) {
-  .carousel {
-    padding: 0 10%; }
-  .carousel-item {
-    min-height: 24em; } }
 
 @media (max-width: 1200px) {
   .carousel-item {

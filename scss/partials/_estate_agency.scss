@@ -13,7 +13,7 @@
 .estate-outer{
     width: 100%;
     height: auto;
-    padding: 2em 0 0 0;
+    padding: 2em 0 1em 0;
     margin: 0;
     position: relative;
     background-position: center;
@@ -26,7 +26,7 @@
     height: auto;
     width: 100%;
     //background: rgba(21, 153, 214, 0.6);
-    background: rgba(0, 112, 0, 0.6);
+    background: rgba(0, 137, 0, 0.4);
     border-top: 2px solid rgba(243, 243, 243, 0.2);
     //border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     position: relative;
@@ -42,7 +42,7 @@
     height: auto;
     padding: 0;
     width: 100%;
-    background: rgba(21, 153, 214, 0.6);
+    background: rgba(31, 183, 253, 0.6);
     //border-top: 2px solid rgba(243, 243, 243, 0.5);
     border-bottom: 2px solid rgba(243, 243, 243, 0.2);
     position: relative;
@@ -119,7 +119,8 @@
     font-family: 'Work Sans', sans-serif;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
-.estate-p{
+.estate-p,
+.estate-p2{
     color: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
     //background: rgba(0, 137, 0, 0.5);
@@ -198,27 +199,36 @@
     font-family: 'Work Sans', sans-serif;
     line-height: 2em;
 }
-
 .estate-logos-outer{
     width: 100%;
     max-width: 1200px;
     height: auto;
-    padding: 0;
+    padding: 0.5em;
     margin: 0 auto;
-    background: red;
+    //background: rgba(31, 183, 253, 0.6);
+    background: rgba(31, 183, 253, 0.6);
+    border: 2px solid rgba(243, 243, 243, 0.2);
+    border-top: none;
     position: relative;
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 .estate-logo{
-    width: 100px;
-    height: 100px;
-    background: plum;
-    margin: 0 0.5em;
+    width: auto;
+    height: 45px;
+    //background: plum;
+    margin: 0.5em 1em;
+    padding: 0;
+    img{
+        width: auto;
+        height: 45px;
+        
+    }
 }
+
 @media (max-width: 1050px){
     .estate-section1{
         margin: 2.5em 0 0 0;
@@ -240,7 +250,7 @@
     }
     .estate-h1{
         width: 90%;
-        padding: 2em 0 0 0;
+        padding: 2em 0;
         margin: 0 auto;
         font-weight: 100;
     }
@@ -265,30 +275,42 @@
         font-size: 1.1em;
         line-height: 1.7em;
         padding: 1em 5%;
+        text-align: initial;
+    }
+    .estate-p2{
+        font-size: 1.1em;
+        line-height: 1.7em;
+        padding: 1em 5%;
     }
     .carousel-item p{
         font-size: 0.9em;
+    }
+    .estate-logo{
+        height: 35px;
+        img{
+            height: 35px;
+        }
     }
 }
 @media( max-width: 720px){
     .nicholas-tel{
         font-size: 1.1em;
         left: 20%;
-        bottom: 13em;
+        bottom: 18em;
     }
     .nicholas-mail a{
         font-size: 1.1em;
-        bottom: 13em;
+        bottom: 18em;
     }
     
     .tel-icon1{
         left: 20%;
         background-size: 45px 45px;
-        bottom: 17em;
+        bottom: 23em;
     }
     .mail-icon1{
         background-size: 45px 45px;
-        bottom: 17em;
+        bottom: 23em;
     }
 }
 
@@ -312,29 +334,39 @@
     }
     .estate-h1,
     .estate-h2,
-    .estate-h3,
     .estate2-h1{
         font-size: 1.5em;
         font-weight: 200;
         //padding-bottom: 3em;
     }
-
-    .estate-p{
+    .estate-h3{
+        font-size: 1.7em;
+        font-weight: 200;
+        
+    }
+    .estate-p,
+    .estate-p2{
         font-weight: 300;
     }
+    .estate-logo{
+        height: 30px;
+        img{
+            height: 30px;
+        }
+    }
     .nicholas-tel{
-        bottom: 9em;
+        bottom: 11em;
     }
     .nicholas-mail a{
-        bottom: 10em;
+        bottom: 12.2em;
         font-size: 1em;
     }
     
     .tel-icon1{
-        bottom: 11em;
+        bottom: 14em;
     }
     .mail-icon1{
-        bottom: 11em;
+        bottom: 14em;
     }
 }
 
