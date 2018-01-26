@@ -10,7 +10,7 @@
     position: relative;
     display: block;
     font-size: 2.5em;
-    padding: 0.5em 0 1em 0;
+    padding: 0 0 1em 0;
     margin: 0 auto;
     text-align: center;
     font-family:'Work Sans', sans-serif;
@@ -26,7 +26,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
-    margin: 2em auto;
+    margin: 3em auto 1em auto;
     max-height: 35em;
 }
 .box-item{
@@ -324,7 +324,7 @@
     }
     .about-flexbox{
         flex-direction: column;
-        margin: 4em auto;
+        margin: 2em auto 0 auto;
         width: 100%;
         min-height: 50em;
         background: none;
@@ -343,6 +343,11 @@
         p{
             font-size: 1.1em;
         }
+    }
+    .modal-logo{
+        width: 50px;
+        height: 57px;
+        background-size: 50px 57px;
     }
     .kingsley-modal-content,
     .nicholas-modal-content{
@@ -379,7 +384,7 @@
 }
 @media (max-width: 480px){
     .about-flexbox{
-        margin: 2em auto;
+        margin: 2em auto 0 auto;
     }
     .box-item{
         width: 100%;

@@ -21,7 +21,7 @@
 .sales-h1{
     position: relative;
     font-size: 2.5em;
-    padding: 1.5em 0;
+    padding: 1em 0;
     margin: 0 auto;
     text-align: center;
     font-family:'Work Sans', sans-serif;
@@ -149,6 +149,7 @@
 @media (max-width: 1050px){
     .sales-p1{
         font-size: 1.3em;
+        
     }
     .sales-flexbox{
         padding: 0;
@@ -172,7 +173,7 @@
     .sales-p1{
         font-size: 1.2em;
         text-align: initial;
-        margin-top: 4em;
+        margin-top: 2em;
     }  
 }
 @media (max-width: 680px){
