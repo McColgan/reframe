@@ -7,14 +7,11 @@
     background: #1599D6;
     font-family: 'Work Sans', sans-serif;
     color: #f3f3f3;
-    
-    
 }
 .leadership-container{
     width: 100%;
     max-width: 1200px;
     height: auto;
-    background: #1599D6;
     position: relative;
     padding: 0;
     margin: 2em auto;
@@ -25,8 +22,6 @@
     text-align: center;
     font-size: 1.6em;
     font-weight: 200;
-
-
 }
 .leadership-p2{
     padding: 0;
@@ -34,9 +29,7 @@
     text-align: center;
     font-size: 2.5em;
     font-weight: 100;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    
-    
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);  
 }
 .leadership-list{
     color: #f8f8f8;
@@ -45,7 +38,6 @@
     text-align: center;
     font-size: 1.4em;
     font-weight: 200;
-    //border: 2px solid #f3f3f3;
     li{
         display: inline-block;
     }
@@ -57,8 +49,11 @@
     font-weight: 200;
     text-align: center;
     width: 100%;
-    background: rgba(0, 112, 0, 0.8);
-    border: 2px solid #f3f3f3;
+    background-image: url(../images/workplace-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -8em center;
+    border: 2px solid rgba(243, 243, 243, 0.4);
     border-radius: 5px;
 }
 .ahf-logo{
@@ -72,7 +67,6 @@
     background-size: 100px 63px;
     transform: translateY(0.5em);
 }
-
 .list-line{
     font-family: sans-serif;
     font-weight: 800;
@@ -96,7 +90,6 @@
         right: auto;
         position: relative;
         text-align: center;
-        //max-width: 90vw;
         font-size: 1.4em;
     }
     .leadership-list{
@@ -138,6 +131,7 @@
     }
     .ahf-case-study{
         font-size: 1.1em;
+        background-position: top center;
     }
     .ahf-logo{
         width: 50px;
@@ -145,5 +139,4 @@
         background-size: 50px 32px;
         transform: translateY(0.5em);
     }
-
 }

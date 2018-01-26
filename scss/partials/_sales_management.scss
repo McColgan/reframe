@@ -6,9 +6,7 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
-    //border-top: 2px solid #f8f8f8;
     border-bottom: 2px solid #f3f3f3;
-    
     background: #1599d6;
 }
 .sales-line-break{
@@ -20,7 +18,6 @@
     margin: 0 auto;
     position: relative;
 }
-
 .sales-h1{
     position: relative;
     font-size: 2.5em;
@@ -40,10 +37,19 @@
     text-align: center;
     margin: 2em auto;
     position: relative;
-    
     width: 90%;
 }
-
+.down-arrow{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0 auto -3.8em auto;
+    background-image: url(../images/down_arrow.png);
+    background-size: 100px 100px;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+}
 .sales-flexbox{
     position: relative;
     display: flex;
@@ -52,36 +58,39 @@
     justify-content: space-around;
     height: auto;
     width: 100%;
-    max-width: 1500px;
     margin: 0 auto;
-    padding: 2em 10%;
+    padding: 2em 5%;
     background-image: url(../images/sales.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .sales-box{
-    flex: 0 45%;
-    padding: 2em;
+    padding: 2em 1em;
     margin: 1em auto;
-    width: 350px;
-    height: 350px;
+    width: 46%;
+    height: auto;
     text-align: center;
-    background: rgba(0, 112, 0, 0.6);
-    border: 2px solid #f3f3f3;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(243, 243, 243, 0.2);
     border-radius: 5px;
     p{
-
         font-size: 1.2em;
-        font-weight: 200;
-        //background: red;
+        font-weight: 300;
         margin: 0;
-        padding: 0 0 2em 0;
+        padding: 0 0 1em 0;
     }
-    
+}
+.box2{
+    background: rgba(0, 112, 0, 0.4);
+}
+.box3{
+    background: rgba(21, 153, 214, 0.5);
+}
+.box4{
+    background: rgba(243, 243, 243, 0.4);
 }
 .thirdspace-logo{
     padding: 0;
@@ -93,8 +102,7 @@
     background-image: url(../images/thirdspace_logo.jpeg);
     background-size: 200px 100px;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center; 
 }
 .paycheck-logo{
     padding: 0;
@@ -115,14 +123,14 @@
     position: relative;
     width: 200;
     height: 96px;
-    background-image: url(../images/paycheck_logo.png);
-    background-size: 200px 96px;
+    background-image: url(../images/nff_logo.jpg);
+    background-size: 200px 99px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .mattgiggs-logo{
     padding: 0;
-    margin: 2em auto 0 auto;
+    margin: 0 auto;
     display: block;
     position: relative;
     width: 230px;
@@ -133,18 +141,24 @@
     background-position: center;
 }
 
-
-
-
-
+@media (min-width: 1450px){
+    .sales-flexbox{
+        padding: 3em 10%;
+    }
+}
 @media (max-width: 1050px){
     .sales-p1{
         font-size: 1.3em;
     }
     .sales-flexbox{
-        padding: 2em 0;
+        padding: 0;
     }
     .sales-box{
+        width: 50%;
+        margin: 0;
+        padding: 2em;
+        border: none;
+        border-radius: 0px;
         p{
             padding: 0 0 1em 0;
         }
@@ -159,20 +173,21 @@
         font-size: 1.2em;
         text-align: initial;
         margin-top: 4em;
-    }
-    
-    
-    
+    }  
 }
 @media (max-width: 680px){
+    .down-arrow{
+        display: none;
+    }
     .sales-flexbox{
         flex-direction: column;
+        padding: 0;
     }
     .sales-box{
-        margin: 1em auto;
-        width: 90%;
+        margin: 0 auto;
+        width: 100%;
         p{
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
     }
 }
@@ -185,4 +200,3 @@
     }
     
 }
-

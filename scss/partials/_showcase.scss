@@ -30,7 +30,6 @@
     background-image: linear-gradient(hsl(199, 82%, 46%), rgba(21, 153, 214, 0.95), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.3));
     opacity: 1;
     position: absolute;
-    //background-attachment: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -135,9 +134,6 @@
       border:2px solid #1599D6;
     }
 }
-
-
-
 @media (max-width: 1050px){
   .frame{
     background-size: 443px 340px;

@@ -41,7 +41,6 @@
         width: 50%;
         max-width: 1000px;
         position: relative;
-        //text-align: center;
         margin: 0 30% 0 0;   
     }
 }
@@ -55,14 +54,12 @@
     right: 0;
     top: 0;
 }
-/* CCustomer logos div */
+/* Customer logos div */
 .customer-logos{
     bottom: 0;
     max-width: 1200px;
     margin: 0 10vw;
     padding: 0.5em 0;
-    //border: 2px solid #f8f8f8;
-    //background: rgba(0, 112, 0, 0.8);
 }
 
 /* Slider */
@@ -162,7 +159,6 @@
 @media (max-width: 768px){
     .our-approach{
         .our-approach-h1{
-            
             padding: 0.5em 0;
             line-height: 1.5em;
             font-weight: 200;
@@ -194,8 +190,6 @@
         
     }
 }
-
-
 @media (max-width: 1050px){
     .our-approach{
         .our-approach-header{

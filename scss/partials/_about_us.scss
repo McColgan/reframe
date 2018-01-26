@@ -5,11 +5,6 @@
     position: relative;
     padding:  2em 0;
     margin: 0;
-    // background-image: url(../images/about_bg1.jpeg);
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
 }
 .about-us-h1{
     position: relative;
@@ -33,9 +28,7 @@
     padding: 0;
     margin: 2em auto;
     max-height: 35em;
-    //background: #e4e4e4;
 }
-
 .box-item{
     margin: 1em 1em;
     padding: 0;
@@ -53,19 +46,15 @@
         
     }
 }
-
 .box-item:hover .box-desc{
     transform: translateY(0%);
 }
-
-
 @keyframes animateBorder {
     to {
       outline-color: #f3f3f3;
       box-shadow: 0 0 0 6px #1599D6;
     }
   }
-  
 .name{
     font-size: 2em;
     font-weight: 300;
@@ -95,7 +84,6 @@
     transform: translateY(150%);
     transition: all ease-in-out 250ms;
     p{
-        
         font-size: 1.6em;
         font-weight: 200;
         justify-content: center;
@@ -123,7 +111,6 @@
         color: #1599D6;
         background: #f3f3f3;
         border-color: #1599D6;
-        
     }
 }
 
@@ -138,7 +125,6 @@
     height: 100%;
     color: #f3f3f3;
     padding-top: 2em;
-    
 }
 .modal-logo{
     display: block;
@@ -227,7 +213,6 @@
     background-image: url(../images/linkedin.png);
     transition: all ease-out 500ms;
 }
-
 .kingsley-modal-content{
     background: #1599D6;
     color: #f3f3f3;
@@ -271,7 +256,6 @@
     overflow-y: auto;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    
     h1{
         text-align: center;
         padding: 0.5em;
@@ -310,14 +294,10 @@
     cursor: pointer;
     opacity: 1;
 }
-
-
-
 @media (max-width: 900px){
     .name{
         font-size: 1.2em;
     }
-
     .box-item{
         img{
             padding: 1em 0 0 0;
@@ -338,7 +318,6 @@
         }
     }
 }
-
 @media (max-width: 640px){
     .about-us-h1{
         font-size: 2em;
@@ -356,8 +335,7 @@
         min-height: none;
         max-height: 380px;
         img{
-            padding-top: 2em;
-            
+            padding-top: 2em;   
         }
     }
     .box-desc{
@@ -366,7 +344,6 @@
             font-size: 1.1em;
         }
     }
-    
     .kingsley-modal-content,
     .nicholas-modal-content{
         width: 85%;
@@ -400,7 +377,6 @@
         }
     }
 }
-
 @media (max-width: 480px){
     .about-flexbox{
         margin: 2em auto;
@@ -409,14 +385,3 @@
         width: 100%;
     }
 }
-
-
-
-
-    
-
-
-
-
-
-

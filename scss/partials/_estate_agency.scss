@@ -10,10 +10,10 @@
     margin: 0;
     color: #f8f8f8;
 }
-.estate-outer{
+.estate-outer1{
     width: 100%;
     height: auto;
-    padding: 2em 0 1em 0;
+    padding: 2em 0 0 0;
     margin: 0;
     position: relative;
     background-position: center;
@@ -25,10 +25,8 @@
 .estate-section1{
     height: auto;
     width: 100%;
-    //background: rgba(21, 153, 214, 0.6);
     background: rgba(0, 137, 0, 0.4);
     border-top: 2px solid rgba(243, 243, 243, 0.2);
-    //border-bottom: 2px solid rgba(243, 243, 243, 0.5);
     position: relative;
     margin: 4em 0 0 0;
     padding: 0;
@@ -38,12 +36,19 @@
     align-items: center;
     position: relative;
 }
+.estate-outer2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #1599d6;
+}
 .estate-section2{
     height: auto;
     padding: 0;
     width: 100%;
     background: rgba(31, 183, 253, 0.6);
-    //border-top: 2px solid rgba(243, 243, 243, 0.5);
     border-bottom: 2px solid rgba(243, 243, 243, 0.2);
     position: relative;
     margin: 0;
@@ -66,7 +71,21 @@
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Work Sans', sans-serif;
 }
-
+.estate-outer3{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/peterborough-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 2px solid rgba(243, 243, 243, 0.2);
+    p{
+        font-weight: 300;
+    }
+}
 .estate-img{
     width: 500px;
     height: 375px;
@@ -78,8 +97,6 @@
     padding: 0;
     margin: 3em 0;
     position: relative;
-    //border: 2px solid #f3f3f3;
-    border-radius: 5px;
 }
 .estate-img-text{
     display: block;
@@ -113,9 +130,9 @@
 }
 .estate-h3{
     font-weight: 200;
-    padding: 6em 2em 2em 2em;
+    padding: 1em;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: 'Work Sans', sans-serif;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
@@ -123,70 +140,70 @@
 .estate-p2{
     color: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
-    //background: rgba(0, 137, 0, 0.5);
-    //background: rgba(21, 153, 214, 0.6);
-    padding: 1em;
+    padding: 2em 5%;
     font-size: 1.6em;
-    line-height: 2em;
     margin: 0 auto;
     text-align: center;
     font-weight: 200;
     max-width: 1200px;
     z-index: 1;
 }
+.estate-contact-outer{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+.estate-contact{
+    height: auto;
+    width: 40%;
+    margin: 0 2em;
+    position: relative;
+    padding: 0.5em;
+    background: rgba(21, 153, 214, 0.7);
+    border: 2px solid rgba(243, 243, 243, 0.4);
+}
 .tel-icon1{
-    height: 64px;
-    width: 64px;
+    height: 45px;
+    width: 45px;
     padding: 0;
-    margin:0;
-    bottom: 20em;
-    left: 30%;
-    transform: translateX(-50%);
-    position: absolute;
+    margin: 0 auto;
     background-image: url(../images/tel_icon1.png);
-    background-size: 64px 64px;
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    
 }
 .mail-icon1{
-    height: 64px;
-    width: 64px;
+    height: 45px;
+    width: 45px;
     padding: 0;
-    margin: 0;
-    bottom: 20em;
-    left: 70%;
-    transform: translateX(-50%);
-    position: absolute;
+    margin: 0 auto;
     background-image: url(../images/mail_icon1.png);
-    background-size: 64px 64px;
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-size: 45px 45px;
 }
 .nicholas-tel{
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 200;
     padding: 0;
     margin: 0;
-    position: absolute;
-    bottom: 10.5em;
-    left: 30%;
-    transform: translateX(-50%);
-    font-family: 'Work Sans', sans-serif;
+    margin-top: 1em;
+    text-align: center;
 }
-.nicholas-mail a{
-    font-size: 1.6em;
+.nicholas-mail{
+    font-size: 1.3em;
     font-weight: 200;
     padding: 0;
     margin: 0;
-    position: absolute;
-    bottom: 10.5em;
-    left: 70%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: #f3f3f3;
-    font-family: 'Work Sans', sans-serif;
-    &:hover{
-        color: #1599d6;
+    margin-top: 1em;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: #f3f3f3;
+        font-family: 'Work Sans', sans-serif;
+        &:hover{
+            color: #1599d6;
+        }
     }
 }
 .carousel-item p{
@@ -201,34 +218,26 @@
 }
 .estate-logos-outer{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     height: auto;
-    padding: 0.5em;
+    padding: 2em;
     margin: 0 auto;
-    //background: rgba(31, 183, 253, 0.6);
-    background: rgba(31, 183, 253, 0.6);
-    border: 2px solid rgba(243, 243, 243, 0.2);
     border-top: none;
     position: relative;
     display: flex;
-    //flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;   
 }
 .estate-logo{
     width: auto;
     height: 45px;
-    //background: plum;
-    margin: 0.5em 1em;
+    margin: 1em;
     padding: 0;
     img{
         width: auto;
         height: 45px;
-        
     }
 }
-
 @media (max-width: 1050px){
     .estate-section1{
         margin: 2.5em 0 0 0;
@@ -245,7 +254,6 @@
             margin: 0;
             width: 70%;
             height: auto;
-            
         }
     }
     .estate-h1{
@@ -282,6 +290,10 @@
         line-height: 1.7em;
         padding: 1em 5%;
     }
+    .estate-h3{
+        font-size: 2em;
+        padding:  1em 0 2em 0;
+    }
     .carousel-item p{
         font-size: 0.9em;
     }
@@ -291,29 +303,13 @@
             height: 35px;
         }
     }
-}
-@media( max-width: 720px){
     .nicholas-tel{
-        font-size: 1.1em;
-        left: 20%;
-        bottom: 18em;
+        font-size: 1.2em;
     }
     .nicholas-mail a{
-        font-size: 1.1em;
-        bottom: 18em;
-    }
-    
-    .tel-icon1{
-        left: 20%;
-        background-size: 45px 45px;
-        bottom: 23em;
-    }
-    .mail-icon1{
-        background-size: 45px 45px;
-        bottom: 23em;
+        font-size: 0.8em;
     }
 }
-
 @media (max-width: 640px){
     .estate-section2{
         video{
@@ -330,44 +326,39 @@
     }
     .estate-img-text{
         font-size: 0.9em;
-        
     }
     .estate-h1,
     .estate-h2,
     .estate2-h1{
         font-size: 1.5em;
         font-weight: 200;
-        //padding-bottom: 3em;
     }
     .estate-h3{
         font-size: 1.7em;
-        font-weight: 200;
-        
+        font-weight: 200; 
     }
     .estate-p,
     .estate-p2{
         font-weight: 300;
+    }
+    .estate-contact-outer{
+        flex-direction: column;
+    }
+    .estate-contact{
+        width: 65%;
+        margin: 1em auto;
+    }
+    .nicholas-mail{
+        font-size: 1.2em;
+    }
+    .estate-logos-outer{
+        justify-content: space-between;
+        padding: 0;
     }
     .estate-logo{
         height: 30px;
         img{
             height: 30px;
         }
-    }
-    .nicholas-tel{
-        bottom: 11em;
-    }
-    .nicholas-mail a{
-        bottom: 12.2em;
-        font-size: 1em;
-    }
-    
-    .tel-icon1{
-        bottom: 14em;
-    }
-    .mail-icon1{
-        bottom: 14em;
-    }
+    }  
 }
-
-

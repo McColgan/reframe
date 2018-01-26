@@ -11,10 +11,10 @@
   margin: 0;
   color: #f8f8f8; }
 
-.estate-outer {
+.estate-outer1 {
   width: 100%;
   height: auto;
-  padding: 2em 0 1em 0;
+  padding: 2em 0 0 0;
   margin: 0;
   position: relative;
   background-position: center;
@@ -36,6 +36,14 @@
   justify-content: space-around;
   align-items: center;
   position: relative; }
+
+.estate-outer2 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #1599d6; }
 
 .estate-section2 {
   height: auto;
@@ -63,6 +71,20 @@
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
   font-family: 'Work Sans', sans-serif; }
 
+.estate-outer3 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/peterborough-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 2px solid rgba(243, 243, 243, 0.2); }
+  .estate-outer3 p {
+    font-weight: 300; }
+
 .estate-img {
   width: 500px;
   height: 375px;
@@ -73,8 +95,7 @@
   border-radius: 2px;
   padding: 0;
   margin: 3em 0;
-  position: relative;
-  border-radius: 5px; }
+  position: relative; }
 
 .estate-img-text {
   display: block;
@@ -108,9 +129,9 @@
 
 .estate-h3 {
   font-weight: 200;
-  padding: 6em 2em 2em 2em;
+  padding: 1em;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: 'Work Sans', sans-serif;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5); }
 
@@ -118,68 +139,68 @@
 .estate-p2 {
   color: #f3f3f3;
   font-family: 'Work Sans', sans-serif;
-  padding: 1em;
+  padding: 2em 5%;
   font-size: 1.6em;
-  line-height: 2em;
   margin: 0 auto;
   text-align: center;
   font-weight: 200;
   max-width: 1200px;
   z-index: 1; }
 
+.estate-contact-outer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px; }
+
+.estate-contact {
+  height: auto;
+  width: 40%;
+  margin: 0 2em;
+  position: relative;
+  padding: 0.5em;
+  background: rgba(21, 153, 214, 0.7);
+  border: 2px solid rgba(243, 243, 243, 0.4); }
+
 .tel-icon1 {
-  height: 64px;
-  width: 64px;
+  height: 45px;
+  width: 45px;
   padding: 0;
-  margin: 0;
-  bottom: 20em;
-  left: 30%;
-  transform: translateX(-50%);
-  position: absolute;
+  margin: 0 auto;
   background-image: url(../images/tel_icon1.png);
-  background-size: 64px 64px;
-  background-position: top center;
-  background-repeat: no-repeat; }
+  background-size: 45px 45px; }
 
 .mail-icon1 {
-  height: 64px;
-  width: 64px;
+  height: 45px;
+  width: 45px;
   padding: 0;
-  margin: 0;
-  bottom: 20em;
-  left: 70%;
-  transform: translateX(-50%);
-  position: absolute;
+  margin: 0 auto;
   background-image: url(../images/mail_icon1.png);
-  background-size: 64px 64px;
-  background-position: top center;
-  background-repeat: no-repeat; }
+  background-size: 45px 45px; }
 
 .nicholas-tel {
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 200;
   padding: 0;
   margin: 0;
-  position: absolute;
-  bottom: 10.5em;
-  left: 30%;
-  transform: translateX(-50%);
-  font-family: 'Work Sans', sans-serif; }
+  margin-top: 1em;
+  text-align: center; }
 
-.nicholas-mail a {
-  font-size: 1.6em;
+.nicholas-mail {
+  font-size: 1.3em;
   font-weight: 200;
   padding: 0;
   margin: 0;
-  position: absolute;
-  bottom: 10.5em;
-  left: 70%;
-  transform: translateX(-50%);
-  text-decoration: none;
-  color: #f3f3f3;
-  font-family: 'Work Sans', sans-serif; }
-  .nicholas-mail a:hover {
-    color: #1599d6; }
+  margin-top: 1em;
+  text-align: center; }
+  .nicholas-mail a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-family: 'Work Sans', sans-serif; }
+    .nicholas-mail a:hover {
+      color: #1599d6; }
 
 .carousel-item p {
   color: #f3f3f3;
@@ -193,23 +214,20 @@
 
 .estate-logos-outer {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   height: auto;
-  padding: 0.5em;
+  padding: 2em;
   margin: 0 auto;
-  background: rgba(31, 183, 253, 0.6);
-  border: 2px solid rgba(243, 243, 243, 0.2);
   border-top: none;
   position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap; }
 
 .estate-logo {
   width: auto;
   height: 45px;
-  margin: 0.5em 1em;
+  margin: 1em;
   padding: 0; }
   .estate-logo img {
     width: auto;
@@ -258,28 +276,19 @@
     font-size: 1.1em;
     line-height: 1.7em;
     padding: 1em 5%; }
+  .estate-h3 {
+    font-size: 2em;
+    padding: 1em 0 2em 0; }
   .carousel-item p {
     font-size: 0.9em; }
   .estate-logo {
     height: 35px; }
     .estate-logo img {
-      height: 35px; } }
-
-@media (max-width: 720px) {
+      height: 35px; }
   .nicholas-tel {
-    font-size: 1.1em;
-    left: 20%;
-    bottom: 18em; }
+    font-size: 1.2em; }
   .nicholas-mail a {
-    font-size: 1.1em;
-    bottom: 18em; }
-  .tel-icon1 {
-    left: 20%;
-    background-size: 45px 45px;
-    bottom: 23em; }
-  .mail-icon1 {
-    background-size: 45px 45px;
-    bottom: 23em; } }
+    font-size: 0.8em; } }
 
 @media (max-width: 640px) {
   .estate-section2 video {
@@ -304,19 +313,20 @@
   .estate-p,
   .estate-p2 {
     font-weight: 300; }
+  .estate-contact-outer {
+    flex-direction: column; }
+  .estate-contact {
+    width: 65%;
+    margin: 1em auto; }
+  .nicholas-mail {
+    font-size: 1.2em; }
+  .estate-logos-outer {
+    justify-content: space-between;
+    padding: 0; }
   .estate-logo {
     height: 30px; }
     .estate-logo img {
-      height: 30px; }
-  .nicholas-tel {
-    bottom: 11em; }
-  .nicholas-mail a {
-    bottom: 12.2em;
-    font-size: 1em; }
-  .tel-icon1 {
-    bottom: 14em; }
-  .mail-icon1 {
-    bottom: 14em; } }
+      height: 30px; } }
 
 .leadership {
   width: 100%;
@@ -332,7 +342,6 @@
   width: 100%;
   max-width: 1200px;
   height: auto;
-  background: #1599D6;
   position: relative;
   padding: 0;
   margin: 2em auto; }
@@ -369,8 +378,11 @@
   font-weight: 200;
   text-align: center;
   width: 100%;
-  background: rgba(0, 112, 0, 0.8);
-  border: 2px solid #f3f3f3;
+  background-image: url(../images/workplace-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top -8em center;
+  border: 2px solid rgba(243, 243, 243, 0.4);
   border-radius: 5px; }
 
 .ahf-logo {
@@ -433,7 +445,8 @@
   .leadership-container .list-line {
     display: none; }
   .ahf-case-study {
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    background-position: top center; }
   .ahf-logo {
     width: 50px;
     height: 32px;
@@ -593,23 +606,10 @@
   position: relative;
   padding: 2em 0;
   margin: 0 auto;
-  background-image: url(../images/lightbulb.png);
-  background-repeat: no-repeat;
-  background-position: bottom -15em right 10em;
-  background-size: contain;
-  background-attachment: fixed;
+  background: #1599D6;
   border-bottom: 2px solid #f3f3f3;
   font-family: 'Work Sans', sans-serif;
   color: #1599D6; }
-  .mentoring:before {
-    content: '';
-    background-image: radial-gradient(rgba(21, 153, 214, 0.4), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.8), #1599d6, #1599d6);
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; }
 
 .mentoring-h1 {
   position: relative;
@@ -663,9 +663,8 @@
   min-height: 35em;
   width: 30%;
   position: relative;
-  border: 2px solid rgba(243, 243, 243, 0.1);
   background: rgba(0, 112, 0, 0.8);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 20px rgba(82, 82, 82, 0.1), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px; }
   .mentoring-box h1 {
     font-size: 1.3em;
@@ -807,6 +806,17 @@
   position: relative;
   width: 90%; }
 
+.down-arrow {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0 auto -3.8em auto;
+  background-image: url(../images/down_arrow.png);
+  background-size: 100px 100px;
+  background-position: center;
+  position: relative;
+  z-index: 3; }
+
 .sales-flexbox {
   position: relative;
   display: flex;
@@ -815,9 +825,8 @@
   justify-content: space-around;
   height: auto;
   width: 100%;
-  max-width: 1500px;
   margin: 0 auto;
-  padding: 2em 10%;
+  padding: 2em 5%;
   background-image: url(../images/sales.png);
   background-position: center;
   background-size: cover;
@@ -825,20 +834,28 @@
   background-attachment: fixed; }
 
 .sales-box {
-  flex: 0 45%;
-  padding: 2em;
+  padding: 2em 1em;
   margin: 1em auto;
-  width: 350px;
-  height: 350px;
+  width: 46%;
+  height: auto;
   text-align: center;
-  background: rgba(0, 112, 0, 0.6);
-  border: 2px solid #f3f3f3;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(243, 243, 243, 0.2);
   border-radius: 5px; }
   .sales-box p {
     font-size: 1.2em;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
-    padding: 0 0 2em 0; }
+    padding: 0 0 1em 0; }
+
+.box2 {
+  background: rgba(0, 112, 0, 0.4); }
+
+.box3 {
+  background: rgba(21, 153, 214, 0.5); }
+
+.box4 {
+  background: rgba(243, 243, 243, 0.4); }
 
 .thirdspace-logo {
   padding: 0;
@@ -871,14 +888,14 @@
   position: relative;
   width: 200;
   height: 96px;
-  background-image: url(../images/paycheck_logo.png);
-  background-size: 200px 96px;
+  background-image: url(../images/nff_logo.jpg);
+  background-size: 200px 99px;
   background-repeat: no-repeat;
   background-position: center; }
 
 .mattgiggs-logo {
   padding: 0;
-  margin: 2em auto 0 auto;
+  margin: 0 auto;
   display: block;
   position: relative;
   width: 230px;
@@ -888,13 +905,23 @@
   background-repeat: no-repeat;
   background-position: center; }
 
+@media (min-width: 1450px) {
+  .sales-flexbox {
+    padding: 3em 10%; } }
+
 @media (max-width: 1050px) {
   .sales-p1 {
     font-size: 1.3em; }
   .sales-flexbox {
-    padding: 2em 0; }
-  .sales-box p {
-    padding: 0 0 1em 0; } }
+    padding: 0; }
+  .sales-box {
+    width: 50%;
+    margin: 0;
+    padding: 2em;
+    border: none;
+    border-radius: 0px; }
+    .sales-box p {
+      padding: 0 0 1em 0; } }
 
 @media (max-width: 720px) {
   .sales-h1 {
@@ -905,13 +932,16 @@
     margin-top: 4em; } }
 
 @media (max-width: 680px) {
+  .down-arrow {
+    display: none; }
   .sales-flexbox {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0; }
   .sales-box {
-    margin: 1em auto;
-    width: 90%; }
+    margin: 0 auto;
+    width: 100%; }
     .sales-box p {
-      font-size: 1.3em; } }
+      font-size: 1.2em; } }
 
 @media (max-width: 620px) {
   .sales-line-break {
@@ -1487,7 +1517,6 @@
   -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
   cursor: pointer;
-  /*display: none;*/
   z-index: 2; }
 
 #nav-icon span {
@@ -1724,7 +1753,7 @@ html, body {
   right: 0;
   top: 0; }
 
-/* CCustomer logos div */
+/* Customer logos div */
 .customer-logos {
   bottom: 0;
   max-width: 1200px;
@@ -6986,9 +7015,7 @@ button.close {
   position: relative;
   padding: 0;
   max-width: 1200px;
-  margin: 3em auto 0 auto;
-  background: rgba(0, 137, 0, 0.4);
-  border: 2px solid rgba(243, 243, 243, 0.2);
+  margin: 0 auto;
   border-bottom: none; }
 
 .carousel-inner {
@@ -7020,6 +7047,10 @@ button.close {
     min-height: 27em; } }
 
 @media (max-width: 800px) {
+  .carousel-item {
+    min-height: 26em; } }
+
+@media (max-width: 620px) {
   .carousel-item {
     min-height: 29em; } }
 
