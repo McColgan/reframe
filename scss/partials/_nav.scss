@@ -77,7 +77,7 @@
             display: flex;
             justify-content: center;
             transition: 1s;
-            border-radius: 5px;
+            border-radius: 3px;
             a{
                 cursor: pointer;
                 display: block;
@@ -95,7 +95,7 @@
                 height: 100%;
                 align-items: center;
                 justify-content: center;
-                border-radius: 5px;
+                border-radius: 3px;
             }
             .disc-logo{
                 padding: 0;
@@ -129,7 +129,7 @@
     transition: all ease-in-out 700ms;
     a{
         color: #1599D6;
-        font-weight: 400;
+        //font-weight: 400;
     } 
 }
 .site-nav li::before,
@@ -149,19 +149,19 @@
     box-sizing: border-box;
     transform: scale(0);
     transition: 0.7s;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .site-nav a::before{
     border-bottom: 2px solid rgb(0, 112, 0);
     border-left: 2px solid rgb(0, 112, 0);
     transform-origin: 100% 0%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .site-nav a::after{
     border-top: 2px solid rgb(0, 112, 0);
     border-right: 2px solid rgb(0, 112, 0);
     transform-origin: 0% 100%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .site-nav a:hover::after,
 .site-nav a:hover::before{
@@ -205,9 +205,9 @@
                 transition: 0;
                 height: auto;
                 border-top: none;
-                border-radius: 5px;
+                border-radius: 3px;
                 a{
-                    padding: 0;
+                    padding: 0 0.5em;
                     font-size: 0.8em;
                     font-weight: 300;
                     margin: 0;
@@ -215,7 +215,7 @@
                     height: 7em;
                     text-align: center;
                     transition: 0.5s;
-                    border-radius: 5px;
+                    border-radius: 3px;
                 }
                 .disc-logo{
                     padding: 0;

@@ -1324,7 +1324,7 @@
       display: flex;
       justify-content: center;
       transition: 1s;
-      border-radius: 5px; }
+      border-radius: 3px; }
       .site-nav ul li a {
         cursor: pointer;
         display: block;
@@ -1342,7 +1342,7 @@
         height: 100%;
         align-items: center;
         justify-content: center;
-        border-radius: 5px; }
+        border-radius: 3px; }
       .site-nav ul li .disc-logo {
         padding: 0;
         margin: 0;
@@ -1371,8 +1371,7 @@
   .site-nav li:hover a,
   .site-nav li:focus a,
   .site-nav li:active a {
-    color: #1599D6;
-    font-weight: 400; }
+    color: #1599D6; }
 
 .site-nav li::before,
 .site-nav li::after {
@@ -1391,19 +1390,19 @@
   box-sizing: border-box;
   transform: scale(0);
   transition: 0.7s;
-  border-radius: 5px; }
+  border-radius: 3px; }
 
 .site-nav a::before {
   border-bottom: 2px solid #007000;
   border-left: 2px solid #007000;
   transform-origin: 100% 0%;
-  border-radius: 5px; }
+  border-radius: 3px; }
 
 .site-nav a::after {
   border-top: 2px solid #007000;
   border-right: 2px solid #007000;
   transform-origin: 0% 100%;
-  border-radius: 5px; }
+  border-radius: 3px; }
 
 .site-nav a:hover::after,
 .site-nav a:hover::before {
@@ -1444,9 +1443,9 @@
         transition: 0;
         height: auto;
         border-top: none;
-        border-radius: 5px; }
+        border-radius: 3px; }
         .site-nav ul li a {
-          padding: 0;
+          padding: 0 0.5em;
           font-size: 0.8em;
           font-weight: 300;
           margin: 0;
@@ -1454,7 +1453,7 @@
           height: 7em;
           text-align: center;
           transition: 0.5s;
-          border-radius: 5px; }
+          border-radius: 3px; }
         .site-nav ul li .disc-logo {
           padding: 0;
           margin: 0;
