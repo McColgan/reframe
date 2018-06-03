@@ -20,6 +20,14 @@ html, body{
     font-weight: 300;
     color: #f3f3f3;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    transition: 1200ms ease-in-out;
+    //transition-delay: 500ms;
+    transform: translateY(-50px);
+    opacity: 0;
+    &.is-showing{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .quote-mark{
   font-weight: 400;
@@ -73,7 +81,7 @@ html, body{
 .twitter-icon:focus,
 .twitter-icon:active{
   background-image: url(../images/twitter_hover.png);
-  transition: all ease-out 500ms;
+  transition: all ease-out 300ms;
 }
 .linkedin-icon,
 .linkedin-icon::before,
@@ -92,7 +100,7 @@ html, body{
 .linkedin-icon:focus,
 .linkedin-icon:active{
   background-image: url(../images/linkedin_hover.png);
-  transition: all ease-out 500ms;
+  transition: all ease-out 300ms;
 }
 .facebook-icon,
 .facebook-icon::before,
@@ -111,7 +119,7 @@ html, body{
 .facebook-icon:focus,
 .facebook-icon:active{
   background-image: url(../images/facebook_hover.png);
-  transition: all ease-out 500ms;
+  transition: all ease-out 300ms;
 }
 @media (max-width: 1050px){
   .section-h1{

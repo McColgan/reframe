@@ -19,6 +19,14 @@
         background-size: 410px 135px;
         z-index: 1;
         margin: 1em auto;
+        transition: 1200ms ease-in-out;
+        //transition-delay: 3000ms;
+        transform: translateY(-50px);
+        opacity: 0;
+        &.is-showing{
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
     .our-approach-h1{
         font-weight: 300;
@@ -32,7 +40,14 @@
         border: 2px solid #f3f3f3;
         display: inline-block;
         background: #1599D6;
-        
+        transition: 1200ms ease-in-out;
+        transition-delay: 500ms;
+        transform: translateX(-100px);
+        opacity: 0;
+        &.is-showing{
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
     .our-approach-p{
         font-weight: 200;
@@ -41,7 +56,15 @@
         width: 50%;
         max-width: 1000px;
         position: relative;
-        margin: 0 30% 0 0;   
+        margin: 0 30% 0 0;
+        transition: 1200ms ease-in-out;
+        transition-delay: 1000ms;
+        transform: translateY(50px);
+        opacity: 0;
+        &.is-showing{
+            opacity: 1;
+            transform: translateY(0px);
+        }   
     }
 }
 .hand{

@@ -171,6 +171,8 @@
     height: auto;
     z-index: 1;
 } 
+
+// DESKTOP NAV //
 @media (min-width: 1050px){
     .header-container{
         height: 6em;
@@ -215,7 +217,7 @@
                     height: 7em;
                     text-align: center;
                     transition: 0.5s;
-                    border-radius: 3px;
+                    //border-radius: 3px;
                 }
                 .disc-logo{
                     padding: 0;

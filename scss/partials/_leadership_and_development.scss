@@ -15,6 +15,14 @@
     position: relative;
     padding: 0;
     margin: 2em auto;
+    transition: 1000ms ease-in-out;
+    transition-delay: 500ms;
+    transform: translateY(50px);
+    opacity: 0;
+    &.is-showing{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .leadership-p1{
     padding: 1em;
