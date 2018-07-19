@@ -44,7 +44,7 @@ html, body{
 .line-break-blue{
   display: block;
   background-color: #1599D6;
-  height: 1px;
+  height: 2px;
   width: 15em;
   padding: 0;
   margin: 0 auto;
@@ -68,13 +68,13 @@ html, body{
 .twitter-icon::before,
 .twitter-icon::after{
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-image: url(../images/twitter.png);
   margin: 0;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 48px 48px;
+  background-size: 40px 40px;
   transition: all ease-out 300ms;
 }
 .twitter-icon:hover,
@@ -87,13 +87,13 @@ html, body{
 .linkedin-icon::before,
 .linkedin-icon::after{
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-image: url(../images/linkedin.png);
   margin: 0;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 48px 48px;
+  background-size: 40px 40px;
   transition: all ease-out 300ms;
 }
 .linkedin-icon:hover,
@@ -106,13 +106,13 @@ html, body{
 .facebook-icon::before,
 .facebook-icon::after{
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-image: url(../images/facebook.png);
   margin: 0;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 48px 48px;
+  background-size: 40px 40px;
   transition: all ease-out 300ms;
 }
 .facebook-icon:hover,
@@ -130,14 +130,5 @@ html, body{
 @media (max-width: 720px){
   .line-break, .line-break-blue{
     width: 8em;
-  }
-}
-@media (max-width:640px){
-  .twitter-icon,
-  .linkedin-icon,
-  .facebook-icon{
-    height: 32px;
-    width: 32px;
-    background-size: 32px 32px;
   }
 }
