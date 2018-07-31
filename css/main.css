@@ -63,7 +63,6 @@
   height: 500px;
   padding: 0;
   width: 100%;
-  background: rgba(31, 183, 253, 0.6);
   position: relative;
   margin: 0;
   display: flex;
@@ -329,7 +328,7 @@
   .estate2-h1 {
     font-size: 1.9em; } }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .estate-section1 {
     margin: 2.5em 0 0 0;
     padding: 0;
@@ -347,7 +346,7 @@
       width: 60%;
       height: auto; }
   .estate-section1-bg {
-    transform: translateY(-2000px); }
+    transform: translateY(-2100px); }
   .estate-section2-bg {
     transform: translateY(-2000px); }
   .estate-h1 {
@@ -446,7 +445,7 @@
   .estate-section1-bg {
     transform: translateY(-2100px); }
   .estate-section2-bg {
-    transform: translateY(-2200px); } }
+    transform: translateY(-2300px); } }
 
 .leadership {
   width: 100%;
@@ -984,7 +983,7 @@
 
 .sales-p1 {
   font-weight: 200;
-  font-size: 1.6em;
+  font-size: 1.3em;
   padding: 0;
   max-width: 1200px;
   text-align: center;
@@ -1033,7 +1032,6 @@
   min-height: 320px;
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(243, 243, 243, 0.2);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -1539,8 +1537,7 @@
       height: 11vh;
       display: flex;
       justify-content: center;
-      transition: 1s;
-      border-radius: 3px; }
+      transition: 1s; }
       .site-nav ul li a {
         cursor: pointer;
         display: block;
@@ -1556,8 +1553,7 @@
         width: 100%;
         height: 100%;
         align-items: center;
-        justify-content: center;
-        border-radius: 3px; }
+        justify-content: center; }
       .site-nav ul li .disc-logo {
         padding: 0;
         margin: 0;
@@ -1882,7 +1878,7 @@ html, body {
 @media (max-width: 1050px) {
   .section-h1 {
     font-size: 2em;
-    margin: 0 2em; } }
+    margin: 0 auto; } }
 
 @media (max-width: 720px) {
   .line-break, .line-break-blue {
@@ -2331,18 +2327,19 @@ html, body {
     padding: 0.5em;
     border: 2px solid #f3f3f3;
     display: block;
-    margin: 0 auto;
+    margin: 1em auto;
     width: 9em;
     position: relative;
     background: #1599D6;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.6em; }
   .kingsley-modal-content .content-p {
-    padding: 2em 5%;
+    padding: 2em 10%;
     font-size: 1.2em;
     font-weight: 300;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.8em; }
 
 .nicholas-modal-content {
@@ -2361,18 +2358,19 @@ html, body {
     padding: 0.5em;
     border: 2px solid #f3f3f3;
     display: block;
-    margin: 0 auto;
+    margin: 1em auto;
     width: 8em;
     position: relative;
     background: #1599D6;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.6em; }
   .nicholas-modal-content .content-p {
-    padding: 3em 5%;
+    padding: 2em 10%;
     font-size: 1.2em;
     font-weight: 300;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.8em; }
 
 .close1,

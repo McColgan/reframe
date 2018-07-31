@@ -68,7 +68,7 @@
     height: 500px;
     padding: 0;
     width: 100%;
-    background: rgba(31, 183, 253, 0.6);
+    
     //border-bottom: 3px solid #f3f3f3;
     position: relative;
     margin: 0;
@@ -360,7 +360,7 @@
     }
     
 }
-@media (max-width: 900px){
+@media (max-width: 920px){
     .estate-section1{
         margin: 2.5em 0 0 0;
         padding: 0;
@@ -382,7 +382,7 @@
         }
     }
     .estate-section1-bg{
-        transform: translateY(-2000px);
+        transform: translateY(-2100px);
     }
     .estate-section2-bg{
         transform: translateY(-2000px);
@@ -520,6 +520,6 @@
         transform: translateY(-2100px);
     } 
     .estate-section2-bg{
-        transform: translateY(-2200px);
+        transform: translateY(-2300px);
     }
 }
