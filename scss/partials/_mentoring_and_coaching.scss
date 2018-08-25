@@ -12,16 +12,15 @@
 .mentoring-h1{
     position: relative;
     display: block;
-    font-size: 2.5em;
+    font-size: 3em;
     padding: 0.5em 5%;
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     text-align: center;
     font-family:'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     color: #f3f3f3;
-    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    //text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     transition: 1200ms ease-in-out;
-    //transition-delay: 500ms;
     transform: translateY(-50px);
     opacity: 0;
     &.is-showing{
@@ -42,7 +41,7 @@
     font-weight: 200;
     font-size: 2em;
     padding: 1em 5%;
-    max-width: 1000px;
+    max-width: 1100px;
     position: relative;
     text-align: center;
     margin: 0.5em auto;
@@ -77,7 +76,7 @@
     width: 30%;
     position: relative;
     background: rgba(0, 112, 0, 0.8);
-    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.1), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     transition: 1200ms ease-in-out;
     transition-delay: 500ms;
@@ -152,6 +151,12 @@
 
 }
 @media (max-width: 900px){
+    .mentoring-h1{
+        font-size: 2em;
+    }
+    .mentoring-p1{
+        font-size: 1.4em;
+    }
     .mentoring-flexbox{
         flex-direction: column;
         border: none;
