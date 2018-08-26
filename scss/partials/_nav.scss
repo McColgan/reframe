@@ -70,13 +70,16 @@
         flex-direction: column;
         justify-content: space-around;
         height: 75vh;
+        width: 40vw;
+        min-width: 260px;
         li{
             border-top: 1px solid rgba(247, 247, 247, 0.25);
             padding: 0;
             height: 11vh;
             display: flex;
             justify-content: center;
-            transition: 1s;
+            transition: all ease-in-out 350ms;
+            //box-sizing: border-box;
             //border-radius: 3px;
             a{
                 cursor: pointer;
@@ -109,7 +112,8 @@
             }
         }
         .activelink{
-            background: rgba(0, 112, 0, 0.8);
+            //background: rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.4);
             a{
                 color: #f3f3f3;
                 //font-weight: 400;
@@ -120,17 +124,18 @@
 .site-nav li:hover,
 .site-nav li:focus,
 .site-nav li:active{
-    background: rgba(243, 243, 243, 1);
+    //background: rgba(0, 0, 0, 0.1);
     border-top: none;
     color: #1599D6;
-    -moz-transition: all ease-in-out 700ms;
-    -o-transition: all ease-in-out 700ms;
-    -webkit-transition: all ease-in-out 700ms;
-    transition: all ease-in-out 700ms;
-    a{
-        color: #1599D6;
-        //font-weight: 400;
-    } 
+    -moz-transition: all ease-in-out 350ms;
+    -o-transition: all ease-in-out 350ms;
+    -webkit-transition: all ease-in-out 350ms;
+    transition: all ease-in-out 350ms;
+    box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.4);
+    // a{
+    //     color: #1599D6;
+    //     //font-weight: 400;
+    // } 
 }
 .site-nav li::before,
 .site-nav li::after{
@@ -148,20 +153,20 @@
     left: 0;
     box-sizing: border-box;
     transform: scale(0);
-    transition: 0.7s;
-    border-radius: 3px;
+    transition: 500ms;
+    //border-radius: 3px;
 }
 .site-nav a::before{
-    border-bottom: 2px solid rgb(0, 112, 0);
-    border-left: 2px solid rgb(0, 112, 0);
+    border-bottom: 3px solid rgb(0, 112, 0);
+    border-left: 3px solid rgb(0, 112, 0);
     transform-origin: 100% 0%;
-    border-radius: 3px;
+    //border-radius: 3px;
 }
 .site-nav a::after{
-    border-top: 2px solid rgb(0, 112, 0);
-    border-right: 2px solid rgb(0, 112, 0);
+    border-top: 3px solid rgb(0, 112, 0);
+    border-right: 3px solid rgb(0, 112, 0);
     transform-origin: 0% 100%;
-    border-radius: 3px;
+    //border-radius: 3px;
 }
 .site-nav a:hover::after,
 .site-nav a:hover::before{
@@ -189,31 +194,27 @@
         max-width: 900px;
         margin: 0 auto;
         height: 5.85em;
-        //width: 900px;
         position: relative;
         top: 0;
         border-left: none;
         border-bottom: none;
-        //background: salmon;
-        //background: none;
         ul{
             height: 5.8em;
             flex-direction: row;
             margin: 0 0 0 55px;
             align-items: center;
-            //justify-content: space-evenly;
             background: none;
             padding: 0;
+            width: auto;
+            min-width: none;
             li{
                 padding: 0;
                 margin: 0;
                 width: 8em;
-                //transition: 0;
                 height: auto;
                 border-top: none;
-                border-radius: 3px;
+                //border-radius: 3px;
                 a{
-                    //padding: 0 0.3em;
                     font-size: 0.75rem;
                     font-weight: 400;
                     margin: 0;
@@ -222,7 +223,6 @@
                     text-align: center;
                     transition: 0.5s;
                     line-height: 1.4em;
-                    //border-radius: 3px;
                 }
                 .disc-logo{
                     padding: 0;
@@ -242,10 +242,11 @@
         background-position: center;
     }
     .site-nav li:hover,
-    .site-nav li:focus{
-        box-shadow: none; 
-        transform: translate(0, 0);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .site-nav li:focus,
+    .site-nav li:active{
+        //transform: translate(0, -5px);
+        //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.4);
     }
     #nav-icon{
         display: none;
