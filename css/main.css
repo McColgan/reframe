@@ -1581,9 +1581,7 @@
         background-size: 45px 45px;
         background-position: center; }
     .site-nav ul .activelink {
-      box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4); }
-      .site-nav ul .activelink a {
-        color: #f3f3f3; }
+      box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.3); }
 
 .site-nav li:hover,
 .site-nav li:focus,
@@ -1594,7 +1592,7 @@
   -o-transition: all ease-in-out 350ms;
   -webkit-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms;
-  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4); }
+  box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.3); }
 
 .site-nav li::before,
 .site-nav li::after {
@@ -1615,13 +1613,13 @@
   transition: 500ms; }
 
 .site-nav a::before {
-  border-bottom: 3px solid #007000;
-  border-left: 3px solid #007000;
+  border-bottom: 5px solid #008A00;
+  border-left: 5px solid #008A00;
   transform-origin: 100% 0%; }
 
 .site-nav a::after {
-  border-top: 3px solid #007000;
-  border-right: 3px solid #007000;
+  border-top: 5px solid #008A00;
+  border-right: 5px solid #008A00;
   transform-origin: 0% 100%; }
 
 .site-nav a:hover::after,
@@ -1685,10 +1683,6 @@
     width: 70px;
     background-size: 70px 79px;
     background-position: center; }
-  .site-nav li:hover,
-  .site-nav li:focus,
-  .site-nav li:active {
-    box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4); }
   #nav-icon {
     display: none; } }
 
