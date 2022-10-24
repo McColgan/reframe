@@ -19,12 +19,12 @@
     display: block;
     padding: 0;
     margin: 0.5em auto;
-    width: 40px;
-    background-image: url(../images/reframeLogoTree.png);
-    height: 45px;
+
+    background-image: url(../Reframe.png);
+  
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px 45px;
+    background-size: auto;
 }
 .reframe-nav{
     position: absolute;
@@ -121,7 +121,7 @@
     -o-transition: all ease-in-out 350ms;
     -webkit-transition: all ease-in-out 350ms;
     transition: all ease-in-out 350ms;
-    box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3);
+    //box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3);
 }
 .site-nav li::before,
 .site-nav li::after{

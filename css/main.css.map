@@ -6,7 +6,11 @@
     "modules/_all.scss",
     "modules/_colors.scss",
     "partials/_base.scss",
-    "partials/_nav.scss"
+    "partials/_nav.scss",
+    "partials/_about_me.scss",
+    "partials/_about_you.scss",
+    "partials/_footer.scss",
+    "partials/_services.scss"
   ],
   "mappings": "",
   "names": []
