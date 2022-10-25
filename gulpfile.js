@@ -1,29 +1,31 @@
-const gulp = require('gulp'),
-browserSync = require('browser-sync').create(),
-sass = require('gulp-sass');
+// list dependences 
+const { src, dest, watch, series } = require('gulp');
+const sass = require('gulp-sass');
+const prefix = require('gulp-autoprefixer');
+const minify = require('gulp-clean-css');
+const { pipeline } = require('stream');
+
+// create functions
 
 
-// Static server & watch scss + html files
-gulp.task('watch', ['sass'], function() {
-
-browserSync.init({
-server: '.'
-});
-
-gulp.watch('./scss/**/*.scss', ['sass'], browserSync.reload);
-gulp.watch('./*.html').on('change', browserSync.reload);
-gulp.watch('./js/**/*.js', browserSync.reload);
-
-});
-
-// Compile Sass into CSS & inject into browsers
-gulp.task('sass', function() {
-return gulp.src('./scss/**/*.scss')
-.pipe(sass().on('error', sass.logError))
-.pipe(gulp.dest('./css'))
-.pipe(browserSync.stream());
-});
+// scss
+function compilecss(){
+    return src('scss/main.scss')
+    .pipe(sass())
+    .pipe(prefix('last 2 versions'))
+    .pipe(minify())
+    .pipe(dest('/css/main.css'))
+} 
 
 
-// default will also watch
-gulp.task('default', ['watch']);
+// create watchask
+function watchTask(){
+    watch('scss/main.scss', compilecss)
+}
+
+
+// default gulp
+exports.default = series{
+    compilecss,
+    watchTask
+};
