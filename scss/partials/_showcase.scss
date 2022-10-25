@@ -83,9 +83,9 @@
     }
     .start-button{
       position: absolute;
-      border: 2px solid #f3f3f3;
-      //background: linear-gradient(to right,rgba(0, 112, 0,0.8), rgba(0, 77, 0,0.8));
-      color: #f8f8f8;
+      border: 2px solid $primary-pink;
+      background: $primary-pink;
+      color: $primary-white;
       padding: 0.5em 2em;
       text-align: center;
       text-decoration: none;
@@ -101,8 +101,8 @@
       -webkit-animation:0.8s ease-in 2.5s normal forwards 1 fadein;
       opacity:0;
       &:hover {
-        background: rgba(248, 248, 248, 0.8);
-        color: #1599D6;
+        background: $primary-blue-dark;
+        color: $primary-white;
         //border: none;
       }
     }
