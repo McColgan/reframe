@@ -2,7 +2,7 @@
     top: 0;
     margin: 0;
     width: 100%;
-    background: #1599D6;
+    background: $primary-blue-dark;
     height: 4em;
     z-index: 100;
     position: fixed;
@@ -19,12 +19,10 @@
     display: block;
     padding: 0;
     margin: 0.5em auto;
-
-    background-image: url(../Reframe.png);
-  
+    background-image: url(/images/Reframe.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: 300px 64px;
 }
 .reframe-nav{
     position: absolute;
@@ -65,7 +63,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background: #1599D6;
+        background: $primary-blue;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -96,19 +94,10 @@
                 align-items: center;
                 justify-content: center;
             }
-            .disc-logo{
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url(../images/disc_logo.png);
-                background-repeat: no-repeat;
-                background-size: 45px 45px;
-                background-position: center;
-            }
+            
         }
         .activelink{
-            box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3);
+            background: $primary-blue-darker;
         }
     }
 }
@@ -116,16 +105,17 @@
 .site-nav li:focus,
 .site-nav li:active{
     border-top: none;
-    color: #1599D6;
+    color: $primary-white;
     -moz-transition: all ease-in-out 350ms;
     -o-transition: all ease-in-out 350ms;
     -webkit-transition: all ease-in-out 350ms;
     transition: all ease-in-out 350ms;
+    background-color: $primary-blue-darker;
     //box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3);
 }
 .site-nav li::before,
 .site-nav li::after{
-    background: #1599D6;
+    background: $primary-blue;
     color: #f3f3f3;
 }
 .site-nav a::before,
@@ -142,13 +132,13 @@
     transition: 500ms;
 }
 .site-nav a::before{
-    border-bottom: 5px solid $primary-green;
-    border-left: 5px solid $primary-green;
+    border-bottom: 5px solid $primary-pink;
+    border-left: 5px solid $primary-pink;
     transform-origin: 100% 0%;
 }
 .site-nav a::after{
-    border-top: 5px solid $primary-green;
-    border-right: 5px solid $primary-green;
+    border-top: 5px solid $primary-pink;
+    border-right: 5px solid $primary-pink;
     transform-origin: 0% 100%;
 }
 .site-nav a:hover::after,
@@ -164,7 +154,8 @@
 @media (min-width: 1050px){
     .header-container{
         border: none;
-        height: 6em;
+        height: 5rem;
+        
     }
     .reframe-nav{
         display: none;
@@ -174,53 +165,51 @@
     }
     .site-nav{
         padding:0;
-        max-width: 900px;
+        max-width: 50rem;
         margin: 0 auto;
-        height: 5.85em;
+        height: 5rem;
         position: relative;
         top: 0;
         border-left: none;
         border-bottom: none;
+        //background: rgb(220, 188, 188);
         ul{
-            height: 5.8em;
+            height: 4.9rem;
             flex-direction: row;
-            margin: 0 0 0 55px;
+            margin: 0;
             align-items: center;
             background: none;
             padding: 0;
             width: auto;
-            min-width: none;
+            //min-width: none;
             li{
                 padding: 0;
                 margin: 0;
-                width: 8em;
+                width: 10em;
                 height: auto;
                 border-top: none;
+                //background: rgb(134, 74, 74);
                 a{
-                    font-size: 0.75rem;
+                    font-size: 0.79rem;
                     font-weight: 400;
                     margin: 0;
                     color: #f8f8f8;
-                    height: 5em;
+                    height: 3.6rem;
                     text-align: center;
                     transition: 0.5s;
                     line-height: 1.4em;
+                    width: 10rem;
                 }
-                .disc-logo{
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
-                    height: 5em;
-                }
+              
             }
         }
     }
     .reframe-logo-tree{
         padding: 0;
-        margin: 0.5em auto;
-        height: 79px;
-        width: 70px;
-        background-size: 70px 79px;
+        margin: 1em;
+        height: 43px;
+        width: 200px;
+        background-size: 200px 43px;
         background-position: center;
     }
     #nav-icon{
@@ -237,6 +226,9 @@
     
 }
   
+
+
+
 /****** Nav Burger Icon ******/
 #nav-icon{
     width: 55px;

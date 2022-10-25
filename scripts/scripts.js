@@ -77,7 +77,7 @@ $(document).ready(function(){
   }
   // Scroll Functions
   $(window).scroll(function(){
-      parallax();
+      //parallax();
       linkSwitching();
       fadeOut();
   });
