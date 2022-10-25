@@ -1,6 +1,6 @@
 // list dependences 
 const { src, dest, watch, series } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const prefix = require('gulp-autoprefixer');
 const minify = require('gulp-clean-css');
 const { pipeline } = require('stream');
@@ -10,12 +10,12 @@ const { pipeline } = require('stream');
 
 // scss
 function compilecss(){
-    return src('scss/main.scss')
+    return src('scss/')
     .pipe(sass())
     .pipe(prefix('last 2 versions'))
     .pipe(minify())
-    .pipe(dest('/css/main.css'))
-} 
+    .pipe(dest('css/main.css'))
+}
 
 
 // create watchask
@@ -25,7 +25,7 @@ function watchTask(){
 
 
 // default gulp
-exports.default = series{
+exports.default = series(
     compilecss,
     watchTask
-};
+);
