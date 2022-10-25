@@ -10,17 +10,17 @@ const { pipeline } = require('stream');
 
 // scss
 function compilecss(){
-    return src('scss/')
+    return src('./scss/**/*.scss')
     .pipe(sass())
     .pipe(prefix('last 2 versions'))
     .pipe(minify())
-    .pipe(dest('css/main.css'))
+    .pipe(dest('main.css'))
 }
 
 
 // create watchask
 function watchTask(){
-    watch('scss/main.scss', compilecss)
+    watch('./scss/**/*.scss', compilecss)
 }
 
 
