@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 1.2em;
 }
-.showcase-outer{
+/*.showcase-outer{
   width: 100%;
   height: 100vh;
   padding: 0;
@@ -12,10 +12,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/showcase_image.jpeg);
+  //background-image: url(../images/showcase_image.jpeg);
   background-repeat: no-repeat;
   overflow: hidden;
-  /*&:before{
+  &:before{
     content: '';
     background-image: linear-gradient(hsl(199, 82%, 46%), rgba(21, 153, 214, 0.95), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.0));
     opacity: 1;
@@ -33,22 +33,24 @@
     padding: 0;
     position: relative;
     }
-    .reframe{
-      color: #f8f8f8;
+    .reframe-logo{
+      z-index: 1;
       position: absolute;
       display: block;
       padding: 0;
-      margin: 3.7em 0 0 0;
-      font-size: 5em;
-      font-weight: 400;
-      letter-spacing: 4px;
+      margin: 0;
       left: 50%;
-      width: auto;
+      width: 400px;
+      height: 86px;
       transform: translateX(-50%);
-      text-shadow: none;
-      animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
-      -webkit-animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
-      opacity:0;
+      //animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
+      //-webkit-animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
+      //opacity:0;
+      background-image: url(/images/Reframe.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 400px 86px;
+      top: 18rem;
       
     }
     
@@ -107,7 +109,7 @@
       }
     }
     
-}
+
 @media (max-width: 1050px){
   .frame{
     background-size: 443px 340px;

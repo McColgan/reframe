@@ -1,11 +1,38 @@
 .about-you{
     width: 100%;
-    height: 1000px;
+    height: auto;
     position: relative;
     padding: 0;
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
     //border-bottom: 2px solid #f3f3f3;
-    //background: $primary-blue;
+    background: $primary-blue;
+}
+
+.about-you h1{
+    position: relative;
+    padding: 5rem 0 0 0;
+    //background: rgb(144, 104, 104);
+    color: $primary-white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-you p{
+   margin: 0 auto;
+   padding: 0 2rem 6rem 2rem;
+   width: 70%;
+   text-align: center;
+}
+
+.pointing-hand{
+    width: 800px;
+    height: 533px;
+    background-image: url(/images/pointing-g2b725fe9a_1920_greyscale.png);
+    background-size: 800px 533px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
 }
