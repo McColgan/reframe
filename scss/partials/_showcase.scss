@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 1.2em;
 }
-/*.showcase-outer{
+.showcase-outer{
   width: 100%;
   height: 100vh;
   padding: 0;
@@ -12,23 +12,26 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  //background-image: url(../images/showcase_image.jpeg);
+  background-image: url(/images/AdobeStock_340500234_Preview.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   &:before{
     content: '';
-    background-image: linear-gradient(hsl(199, 82%, 46%), rgba(21, 153, 214, 0.95), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.0));
+    background: rgb(4,26,36);
+    background: linear-gradient(180deg, rgba(4,26,36,0.8) 0%, rgba(4,26,36,0.8) 10%, rgba(4,26,36,0.6) 31%, rgba(4,26,36,0.3) 100%);
     opacity: 1;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-  }*/
+  }
+}
+
 .showcase{
     width: 100%;
     height: 100vh;
-    background: $primary-blue;
+    //background: $primary-blue;
     margin: 0;
     padding: 0;
     position: relative;
@@ -38,7 +41,7 @@
       position: absolute;
       display: block;
       padding: 0;
-      margin: 0;
+      margin: 15rem 0 0 0;
       left: 50%;
       width: 400px;
       height: 86px;
@@ -50,7 +53,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 400px 86px;
-      top: 18rem;
+      top: 0;
       
     }
     
@@ -65,27 +68,27 @@
     .reframe-P{
       padding: 0;
       width: 70%;
-      max-width: 35em;
+      max-width: 23em;
       position: absolute;
       display: block;
       left: 50%;
       transform: translateX(-50%);
       font-family:'Work Sans', sans-serif;
       font-weight: 200;
-      font-size: 1.6em;
+      font-size: 1.8em;
       text-align: center;
       line-height: 1.6em;
       text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-      margin: 17.5em 0 0 0;
+      margin: 16.5em 0 0 0;
       color: #f8f8f8;
-      animation:0.8s ease-in 1.5s normal forwards 1 fadein;
-      -webkit-animation:0.8s ease-in 1.5s normal forwards 1 fadein;
+      animation:0.8s ease-in .5s normal forwards 1 fadein;
+      -webkit-animation:0.8s ease-in .5s normal forwards 1 fadein;
       opacity: 0;
       height: auto;
     }
     .start-button{
       position: absolute;
-      border: 2px solid $primary-pink;
+      //border: 2px solid $primary-pink;
       background: $primary-pink;
       color: $primary-white;
       padding: 0.5em 2em;
@@ -100,10 +103,10 @@
       cursor: pointer;
       transition: 300ms ease-in-out;
       animation:0.8s ease-in 2.5s normal forwards 1 fadein;
-      -webkit-animation:0.8s ease-in 2.5s normal forwards 1 fadein;
+      -webkit-animation:0.8s ease-in 1.5s normal forwards 1 fadein;
       opacity:0;
       &:hover {
-        background: $primary-blue-dark;
+        background: $primary-blue;
         color: $primary-white;
         //border: none;
       }

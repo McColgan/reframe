@@ -14,12 +14,12 @@ $(document).ready(function(){
   });
   
   
-  //Parallax 
-  //function parallax(){
-    //var wScroll = $(window).scrollTop();
-    //$('.showcase-outer').css('top',(wScroll * 0.04)+'em');
-    //$('.frame').css('top',(wScroll * 0.02)+'em');
-    //$('.hand').css('top',(wScroll * 0.03)+'em');
+  // Parallax 
+  function parallax(){
+    var wScroll = $(window).scrollTop();
+    $('.showcase-outer').css('top',(wScroll * 0.04)+'em');
+    $('.reframe-logo').css('top',(wScroll * 0.02)+'em');
+    $('.pointing-hand').css('top',(wScroll * 0.007)+'em');
   
     // Our-approach fade-ins
    // if(wScroll > $('.our-approach').offset().top - ($(window).height() / 1.3)){
@@ -57,7 +57,7 @@ $(document).ready(function(){
             //$('.sales-box').eq(i).addClass('is-showing');
         //}, 250 * (i+1));
         //});
-    //};
+    };
     
   // Link Switching
   function linkSwitching(){
@@ -73,11 +73,11 @@ $(document).ready(function(){
   // Element Fade Outs
   function fadeOut(){
     
-    $(".frame").css("opacity", 1 - $(window).scrollTop() / 400);
+    $(".reframe-logo").css("opacity", 1 - $(window).scrollTop() / 400);
   }
   // Scroll Functions
   $(window).scroll(function(){
-      //parallax();
+      parallax();
       linkSwitching();
       fadeOut();
   });

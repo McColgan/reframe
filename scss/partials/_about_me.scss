@@ -16,10 +16,73 @@
     text-align: center;
 }
 
+
+.profile-container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    //justify-content: center;
+    background: #ffffff;
+}
+
+.profile-img{
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    background-image: url(/images/profile_grey.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 533px;
+    border-radius: 50%;
+    margin: 5rem;
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
+}
+
+.profile-text-container{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //background: rgb(157, 79, 79);
+}
+
+.profile-text-container h1{
+    font-size: 2rem;
+    padding: 0;
+    margin: auto;
+    //background: rgb(118, 103, 103);
+    margin-bottom: 2rem;
+    
+}
+.profile-text-container p{
+    //background: rgb(85, 44, 44);
+    margin: 0;
+    text-align: center;
+    padding: 0 4rem 10rem 4rem;
+    color: $primary-blue-darker;
+    font-size: 1.5rem;
+}
+
+.pink-quotes{
+    font-size: 2rem;
+    color: $primary-pink;
+    
+}
+
+
+
+
 .about-me-bio{
     color: $primary-blue-darker;
     margin: 0 auto;
-    padding: 2rem 2rem 8rem 2rem;
+    padding: 8rem 2rem;
     text-align: center;
     width: 70vw;
 }
@@ -35,9 +98,9 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(/images/meeting_pink.png);
+    background-image: url(/images/AdobeStock_191227652_Preview.png);
     overflow: hidden;
-    background-position-x: 300px;
+    background-position-x: 170px;
 }
 
 .examples-list{
@@ -50,26 +113,26 @@
     background: $primary-pink;
     width: 50%;
     padding: 4rem 1rem 4rem 4rem;
-    -webkit-clip-path: ellipse(62% 92% at 33% 51%);
-clip-path: ellipse(62% 92% at 33% 51%);
+    -webkit-clip-path: ellipse(65% 92% at 33% 51%);
+    clip-path: ellipse(65% 92% at 33% 51%);
     
 }
 .examples-list h1{
         color: $primary-white;
-        padding: 3rem 0;
-        text-align: center;
+        padding: 3rem 0 3rem 4.5rem;
+        text-align: left;
         font-weight: 700;
-        
         margin: 0;
         font-size: 2rem;
         //background: red;
-    
+        align-self: flex-start;
 }
 .examples-list li{
     font-size: 1.2rem;
     color: $primary-white;
     padding: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     width: 80%;
     opacity: 0.8;
+    list-style-type: none;
 }
