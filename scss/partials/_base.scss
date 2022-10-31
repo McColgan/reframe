@@ -30,36 +30,19 @@ html, body{
         filter: blur(5px);
         transition: 0.2s ease-in;   
 }
-.twitter-icon,
-.twitter-icon::before,
-.twitter-icon::after{
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-image: url(../images/twitter.png);
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 40px 40px;
-  transition: all ease-out 300ms;
-}
-.twitter-icon:hover,
-.twitter-icon:focus,
-.twitter-icon:active{
-  background-image: url(../images/twitter_hover.png);
-  transition: all ease-out 300ms;
-}
+
+
 .linkedin-icon,
 .linkedin-icon::before,
 .linkedin-icon::after{
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-image: url(../images/linkedin.png);
   margin: 0;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 40px 40px;
+  background-size: 50px 50px;
   transition: all ease-out 300ms;
 }
 .linkedin-icon:hover,
@@ -68,24 +51,6 @@ html, body{
   background-image: url(../images/linkedin_hover.png);
   transition: all ease-out 300ms;
 }
-.facebook-icon,
-.facebook-icon::before,
-.facebook-icon::after{
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-image: url(../images/facebook.png);
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 40px 40px;
-  transition: all ease-out 300ms;
-}
-.facebook-icon:hover,
-.facebook-icon:focus,
-.facebook-icon:active{
-  background-image: url(../images/facebook_hover.png);
-  transition: all ease-out 300ms;
-}
+
 
 

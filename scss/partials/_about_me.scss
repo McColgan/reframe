@@ -32,14 +32,15 @@
     width: 400px;
     height: 400px;
     padding: 0;
-    background-image: url(/images/profile_grey.png);
+    background-image: url(/images/IMG_4833_3.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 400px 533px;
+    background-position: top -125px left -50px;
+    background-size: 470px 627px;
     border-radius: 50%;
     margin: 5rem;
-    -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
+    //border: 2px outset #D8176B;
+    //-webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
+    //-moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
 }
 
@@ -65,9 +66,10 @@
     //background: rgb(85, 44, 44);
     margin: 0;
     text-align: center;
-    padding: 0 4rem 10rem 4rem;
+    padding: 0 4rem 11rem 4rem;
     color: $primary-blue-darker;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .pink-quotes{
@@ -75,9 +77,6 @@
     color: $primary-pink;
     
 }
-
-
-
 
 .about-me-bio{
     color: $primary-blue-darker;
@@ -88,6 +87,8 @@
 }
 
 
+
+// PINK SECTION
 .about-me-examples{
     position: relative;
     display: block;
@@ -111,7 +112,7 @@
     align-items: center;
     height: auto;
     background: $primary-pink;
-    width: 50%;
+    width: 55%;
     padding: 4rem 1rem 4rem 4rem;
     -webkit-clip-path: ellipse(65% 92% at 33% 51%);
     clip-path: ellipse(65% 92% at 33% 51%);
@@ -119,20 +120,20 @@
 }
 .examples-list h1{
         color: $primary-white;
-        padding: 3rem 0 3rem 4.5rem;
+        padding: 3rem 0 3rem 5rem;
         text-align: left;
         font-weight: 700;
         margin: 0;
-        font-size: 2rem;
+        font-size: 2.5rem;
         //background: red;
         align-self: flex-start;
 }
 .examples-list li{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: $primary-white;
-    padding: 2rem;
-    font-weight: 600;
+    padding: 1.5rem 2.5rem;
+    font-weight: 500;
     width: 80%;
-    opacity: 0.8;
-    list-style-type: none;
+    opacity: 0.9;
+    //list-style-type: none;
 }

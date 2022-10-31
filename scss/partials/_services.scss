@@ -2,18 +2,205 @@
     margin: 0;
     padding:0;
     width: 100%;
-    height: 500px;
-    background: $primary-blue-dark;
+    height: auto;
+    background: #fff;
     position: relative;
     font-family: 'Work Sans', sans-serif;
 }
 
-.services h1{
-    position: relative;
-    padding: 5rem 0;
-    //background: rgb(144, 104, 104);
-    color: $primary-white;
-    margin: 0 auto;
-    text-align: center;
+
+// Background
+.services-bg{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(/images/service_bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+.services-header{
+    position: relative;
+    padding: 5rem 0 0 8rem;
+    //background: rgb(144, 104, 104);
+    color: $primary-blue-dark;
+    margin: 0 auto;
+    //text-align: center;
+}
+
+.services h2{
+    position: relative;
+    padding: 5rem 0 0 8rem;
+    margin: 0;
+    color: $primary-blue;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 40%;
+}
+.services ul{
+    padding-bottom: 17rem;
+}
+.services li{
+    position: relative;
+    padding: 3rem 0 0 0;
+    margin-left: 6.9rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    //opacity: 0.5;
+    width: 40%;
+    list-style: none;
+}
+.services li::before {
+    content: "\2022";
+    color: $primary-blue;
+    font-weight: 700;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.5rem;
+  }
+
+// BANNER
+.services-image-banner{
+    position: absolute;
+    width: 91%;
+    height: 400px;
+    padding: 0;
+    margin: -13rem 0 0 0;
+    background-image: url(/images/AdobeStock_340496617_Preview_Grey.png);
+    background-size: cover;
+    background-position: top -100px center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    right: 0;
+
+}
+
+
+// QUESTIONS SECTION
+.services-questions-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: $primary-white;
+    padding-top: 18rem;
+    padding-bottom: 12rem;
+    margin: 0;
+}
+
+
+
+
+.services-questions-flexbox{
+    padding: 0;
+    margin: 5em auto;
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    //background: red;
+    //align-items: center;
+}
+
+.services-questions-flexbox:nth-child(2){
+    flex-direction: row-reverse;
+    h2{
+        color: $primary-pink;
+    }
+}
+
+// dash line
+.services-questions-flexbox:nth-child(1) .question-box{
+    h2::before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 5px;
+        background: $primary-blue;
+        position: absolute;
+        right: -2rem;
+        top: 50%;
+    }
+}
+.services-questions-flexbox:nth-child(2) .question-box{
+    h2::before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 5px;
+        background: $primary-pink;
+        position: absolute;
+        left: -3rem;
+        top: 50%;
+    }
+}
+
+
+
+.question-box{  
+    margin: 0 4rem;
+    padding: 0;
+    width: 50%;
+    //height: 100%;
+    //background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+    }
+}
+
+.content-box{
+    margin: 0 4rem;
+    padding: 0;
+    width: 50%;
+    //height: 100%;
+    line-height: 1.4rem;
+    //background: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+
+.services-questions-container h1{
+    position: relative;
+    padding-bottom: 10rem;
+    margin: 10rem auto 0 auto;
+    color: $primary-blue-dark;
+    font-weight: 700;
+    font-size: 1.7rem;
+    //background: red;
+    text-align: center;
+    width: 50%;
+}
+
+
+.people-illustration{
+    position: absolute;
+    width: 233px;
+    height: 250px;
+    background-image: url(/images/people-4417185_1920.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+}

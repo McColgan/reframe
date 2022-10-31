@@ -2,43 +2,58 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 0 0 6rem 0;
-    //margin: 0;
+    padding: 0;
+    margin: 0;
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
-    //border-bottom: 2px solid #f3f3f3;
-    background: $primary-blue;
+    background: $primary-blue-darker;
 }
 
-.about-you h1{
-    
-    padding: 5rem 5rem 0 0;
+
+.about-you-container{
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(/images/AdobeStock_537889322_Preview.png);
+    overflow: hidden;
+    //background-position-x: 170px;
+
+}
+.about-you-text-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: auto;
+    background: $primary-blue;
+    //width: 50%;
+    padding-bottom: 6rem;
+    margin-left: 44.55%;
+    clip-path: ellipse(100% 95% at 100% 51%);
+}
+
+
+.about-you-container h1{
+    padding: 0;
     //background: rgb(144, 104, 104);
     color: $primary-white;
-    margin: 0 auto;
-    text-align: right;
+    margin-bottom: 6rem;
+    text-align: center;
 }
 
-.about-you p{
-    padding: 0 2rem;
-    width: 40%;
-    max-width: 1000px;
-    
-    margin: 6rem 0 0 50%;
-    text-align: left;
+.about-you-container p{
+    width: 70%;
+    padding:0 0 3rem 0;
+    margin: 0;
+    text-align: center;
     //background: rgb(192, 152, 152);
 }
 
-.pointing-hand{
-    position: absolute;
-    width: 1000px;
-    height: 467px;
-    background-image: url(/images/pointing-g2b725fe9a_1920_greyscale.png);
-    background-size: 1000px 667px;
-    background-repeat: no-repeat;
-    left: -5rem;
-    background-position-y: -100px;
-    z-index: 1;
-    padding: 0;
-    top: 0;
-}

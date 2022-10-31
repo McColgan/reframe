@@ -19,7 +19,7 @@ $(document).ready(function(){
     var wScroll = $(window).scrollTop();
     $('.showcase-outer').css('top',(wScroll * 0.04)+'em');
     $('.reframe-logo').css('top',(wScroll * 0.02)+'em');
-    $('.pointing-hand').css('top',(wScroll * 0.007)+'em');
+    $('.pointing-hand').css('top',(wScroll * 0.006)+'em');
   
     // Our-approach fade-ins
    // if(wScroll > $('.our-approach').offset().top - ($(window).height() / 1.3)){
