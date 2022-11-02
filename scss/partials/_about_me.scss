@@ -6,7 +6,6 @@
     margin: 0;
     background: $primary-white;
 }
-
 .about-me h1{
     position: relative;
     padding: 5rem 0;
@@ -15,8 +14,6 @@
     margin: 0 auto;
     text-align: center;
 }
-
-
 .profile-container{
     position: relative;
     width: 80%;
@@ -27,7 +24,6 @@
     //justify-content: center;
     background: #ffffff;
 }
-
 .profile-img{
     width: 400px;
     height: 400px;
@@ -43,7 +39,6 @@
     //-moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.25);
 }
-
 .profile-text-container{
     width: 50%;
     height: auto;
@@ -53,14 +48,12 @@
     justify-content: space-between;
     //background: rgb(157, 79, 79);
 }
-
 .profile-text-container h1{
     font-size: 2rem;
     padding: 0;
     margin: auto;
     //background: rgb(118, 103, 103);
     margin-bottom: 2rem;
-    
 }
 .profile-text-container p{
     //background: rgb(85, 44, 44);
@@ -70,12 +63,11 @@
     color: $primary-blue-darker;
     font-size: 1.3rem;
     font-weight: 500;
+    //opacity: .8;
 }
-
 .pink-quotes{
     font-size: 2rem;
     color: $primary-pink;
-    
 }
 
 .about-me-bio{
@@ -85,7 +77,6 @@
     text-align: center;
     width: 70vw;
 }
-
 
 
 // PINK SECTION
@@ -102,6 +93,7 @@
     background-image: url(/images/AdobeStock_191227652_Preview.png);
     overflow: hidden;
     background-position-x: 170px;
+    
 }
 
 .examples-list{
@@ -136,4 +128,56 @@
     width: 80%;
     opacity: 0.9;
     //list-style-type: none;
+}
+
+
+
+// QUOTE BOX SECTION
+.quote-box{
+    height: auto;
+    width: 100%;
+    padding: 5rem 0;
+    margin:0 auto;
+    background: $primary-blue-dark;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quote-box-container{
+    width: 70%;
+    height: auto;
+    padding: 6rem 2rem;
+    margin: auto;
+    position: relative;
+}
+
+
+.quote-box-container:nth-of-type(1){
+    ::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -0.5rem;
+    width: 50%;
+    height: 1px;
+    background-color: $primary-pink;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    }
+}
+
+.quote-box p{
+    margin:0 auto;
+    max-width: 1000px;
+    padding: 1rem 0;
+    font-weight: 700;
+    color: $primary-white;
+}
+.quote-box p:nth-child(2){
+    opacity: .8;
+    font-weight: 500;
 }

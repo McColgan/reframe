@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     background-image: url(/images/AdobeStock_537889322_Preview.png);
     overflow: hidden;
-    //background-position-x: 170px;
+    background-position-x: -200px;
 
 }
 .about-you-text-container{
@@ -36,7 +36,7 @@
     background: $primary-blue;
     //width: 50%;
     padding-bottom: 6rem;
-    margin-left: 44.55%;
+    margin-left: 35%;
     clip-path: ellipse(100% 95% at 100% 51%);
 }
 
@@ -46,14 +46,19 @@
     //background: rgb(144, 104, 104);
     color: $primary-white;
     margin-bottom: 6rem;
+    margin-right: -5rem;
     text-align: center;
 }
 
 .about-you-container p{
-    width: 70%;
-    padding:0 0 3rem 0;
-    margin: 0;
-    text-align: center;
+    width: 64%;
+    padding:0 0 4rem 0;
+    margin-right: -5rem;
+    text-align: left;
+    opacity: .8;
     //background: rgb(192, 152, 152);
+    font-weight: 500;
 }
+
+
 

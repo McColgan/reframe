@@ -15,6 +15,13 @@ html, body{
   font-size: 200%;
 }
 
+.box-quotation-marks{
+  color: $primary-pink;
+  font-size: 200%;
+  padding: 0 0.5rem;
+}
+
+
 .fade-section{
   opacity: 0;
   transition: opacity 1.5s;
