@@ -19,6 +19,8 @@
     "sass": "^1.55.0"
   },
   "dependencies": {
-    "git": "^0.1.5"
+    "bootstrap": "^5.2.2",
+    "git": "^0.1.5",
+    "jquery": "^3.6.1"
   }
 }
