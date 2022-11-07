@@ -27,7 +27,7 @@
 .reframe-nav{
     position: absolute;
     display: block;
-    left: 40px;
+    left: 0;
     font-size: 2.2em;
     color: #f3f3f3;
     font-weight: 200;
@@ -52,7 +52,7 @@
     padding: 0;
     position: absolute;
     line-height: 1.5em;
-    right: 0%;
+    right: 0;
     top: 3.87em;
     height: 0px;
     overflow: hidden;
@@ -157,7 +157,7 @@
     .header-container{
         border: none;
         height: 5rem;
-        background: rgb(4,26,36, 0.8);
+        background: rgb(4,26,36, 0.9);
     }
     .reframe-nav{
         display: none;
@@ -224,6 +224,7 @@
         font-weight: 100;
         margin: 0.55em 0 0 0.3em;
         padding: 0;
+        left: 0;
     }
     
 }

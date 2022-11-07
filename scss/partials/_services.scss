@@ -211,25 +211,27 @@
 
 
 @media (max-width: 768px){
-    .services-questions-flexbox{
-        flex-direction: column;
+    .services-questions-container{
+        padding: 10rem 10% 20rem 10%;
+        width: 100%;
+    }
+    .services-questions-container h1{
+        width: 100%;
+        margin: 5rem 0 0 0;
         padding: 0;
     }
-    .question-box{
-        width: 65%;
-        padding: 6rem 0 3rem 0;
-        h2{
-            font-size: 2.5rem;
-        }
+
+    
+    .services-questions-flexbox{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
     }
+    
     .services-questions-flexbox:nth-child(2){
         flex-direction: column;
     }
-    .content-box{
-        width: 65%;
-        padding: 0 0 2rem 0;
-    }
-
     .services-questions-flexbox:nth-child(1) .question-box{
         h2::before{
             display: none;
@@ -240,34 +242,54 @@
             display: none;
         }
     }
+    .question-box{
+        width: 100%;
+        padding: 4rem 0 3rem 0;
+        h2{
+            font-size: 2.5rem;
+            text-align: left;
+        }
+    }
+    .content-box{
+        width: 100%;
+        padding: 0 0 2rem 0;
+        text-align: left;
+    }
+    .people-illustration{
+        height: 150px;
+        width: 150px;
+        bottom: 5rem;
+    }
+    
 }
 
 
 
-@media (max-width: 800px){
+@media (max-width: 768px){
     .services-bg{
        background-image: none;
     }
-       .services h2, .services li{
-         width: 85%;
+    .services-header{
+        padding: 3rem 10%;
+    }
+    .services h2, .services li{
+    width: 100%;
          
-       }
-       .services h2{
-        padding: 5rem auto;
-       }
-        .services li{
-        
+    }
+    .services-bg h2{
+        padding: 0 10% 3rem 10%;
         margin: 0 auto;
-        width: 85%;
+    }
+    .services .question-box h2{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .services li{ 
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    }
 
-    }
-    .services-questions-container{
-        padding-top: 10rem;
-    }
-    .services-questions-container h1{
-        width: 75%;
-        margin: 5rem auto 0 auto;
-    }
 }
 
 @media (max-width: 1200px){
@@ -275,3 +297,5 @@
         background-position: top right -15rem;
     }
 }
+
+

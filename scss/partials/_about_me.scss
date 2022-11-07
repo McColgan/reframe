@@ -206,19 +206,35 @@
 @media (max-width: 768px){
     .examples-list{
         width: 100%;
-        padding: 5rem 15%;
+        padding: 0 10% 5rem 10%;
+    }
+    .examples-list h1{
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+    .examples-list li{
+        margin: 3rem auto;
+        padding: 0;
     }
     .quote-box-container{
-        width: 75%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 5% 4rem 5%;
     }
-    .quote-box p{
-        font-size: 1.1rem;
+    .quote-box-container:nth-of-type(2){
+        padding: 4rem 5% 1rem 5%;
     }
-    .quote-box p:nth-child(2){
+    .quote-box {
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+    .quote-box p, .quote-box p:nth-child(2){
         font-size: 1.1rem;
+       
     }
     .profile-container{
         flex-direction: column;
+        margin: 0 auto 5rem auto;
     }
     .profile-text-container{
         width: 100%;
@@ -229,9 +245,15 @@
     }
     .profile-text-container p{
         margin: 0 auto;
-        padding: 0;
+        padding: 0 10%;
         text-align: center;
+        line-height: 2.2rem;
     }
+    .about-me-bio{
+        padding: 5rem 10%;
+        text-align: left;
+    }
+   
 }
 
 
