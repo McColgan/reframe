@@ -246,7 +246,7 @@
     }
 }
 
-@media only screen and (max-width: 767px){
+@media (max-width: 768px){
     .owl-nav{
         display: none;
     }
@@ -256,6 +256,32 @@
     .client-stories-box:hover{
         box-shadow: none;
         transform: none;
+    }
+
+
+
+
+    #testimonial_area{
+        padding: 0;
+    }
+    #testimonial_area .container{
+        padding: 7rem 0 3rem 0;
+    }
+    #testimonial_area .box-area p{
+        font-size: 1.1rem;
+        
+    }
+    .box-area h5{
+        font-size: 1.1rem;
+    }
+    .box-area span{
+        font-size: 1rem;
+        max-width: 60%;
+    }
+    #testimonial_area .container::before{
+        font-size: 7rem;
+        left: 5%;
+        top: 2.5rem;
     }
 }
 
