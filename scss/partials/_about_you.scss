@@ -15,7 +15,6 @@
     display: block;
     padding: 0;
     margin: 0;
-    width: 100%;
     height: auto;
     background-position: right;
     background-size: cover;
@@ -26,6 +25,7 @@
     background-position-x: -200px;
 
 }
+
 .about-you-text-container{
     position: relative;
     display: flex;
@@ -36,29 +36,47 @@
     background: $primary-blue;
     //width: 50%;
     padding-bottom: 6rem;
-    margin-left: 35%;
-    clip-path: ellipse(100% 95% at 100% 51%);
+    margin-left: 40%;
 }
 
-
 .about-you-container h1{
-    padding: 0;
-    //background: rgb(144, 104, 104);
+    padding: 0 100px 0 150px;
     color: $primary-white;
+    margin-top: 5rem;
     margin-bottom: 6rem;
-    margin-right: -5rem;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
 
 .about-you-container p{
-    width: 64%;
-    padding:0 0 4rem 0;
-    margin-right: -5rem;
+    width: 100%;
+    padding:0 150px;
     text-align: left;
     opacity: .8;
-    //background: rgb(192, 152, 152);
     font-weight: 500;
+}
+
+.about-you-container p:nth-last-of-type(2){
+    padding-bottom: 5rem;
 }
 
 
 
+
+// MEDIA QUERIES
+@media (max-width: 1120px){
+    .about-you-container h1{
+        font-size: 4rem;
+        padding: 0 100px 0 15%;
+    }
+    .about-you-container p{
+        font-size: 1.1rem;
+        padding: 0 15%;
+    }
+}
+
+@media (max-width: 768px){
+    .about-you-text-container{
+        margin-left: 0;
+    }
+}

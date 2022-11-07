@@ -137,23 +137,11 @@
   }
 }
 @media (max-width: 620px){
-  .frame{
-    background-size: 400px 307px;
-  }
+ 
   .showcase{
     background-position: top center;
-    .reframe-logo{
-      width: 120px;
-      height: 136px;
-      background-size: 120px 136px;
-      padding: 0;
-      margin: 8em 0 0 0;
-    }
-    .reframe{
-      font-size: 3.5em;
-      padding: 0;
-      margin: 4.3em 0 0 0;
-    }
+    
+   
     .reframe-P{
       font-size: 1.1em;
       height: auto;
@@ -169,26 +157,23 @@
     }
   }
 }
-@media (max-width: 420px){
-  .frame{
-    background-size: 300px 230px;
-  }
-  .showcase{
-    .reframe-logo{
-      width: 80px;
-      height: 91px;
-      background-size: 80px 91px;
-      margin: 7.2em 0 0 0;
-    }
-    .reframe{
-      font-size: 3em;
-      margin: 3.9em 0 0 0;
-    }
+@media (max-width: 420px){   
     .reframe-P{
       margin: 16em 0 0 0;
     }
     .start-button{
       margin: 26em 0 0 0;
     }
+  
+}
+
+@media (max-width: 768px){
+  .reframe-logo{
+    margin: 15rem 0 0 0;
+    left: 50%;
+    width: 250px;
+    height: 54px;
+    background-size: 250px 54px;
+    
   }
 }

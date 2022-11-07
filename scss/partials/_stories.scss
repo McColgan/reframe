@@ -45,6 +45,7 @@
     margin-bottom:3%;
     position: relative;
     transition: all 0.15s ease-in-out;
+    opacity: 0.8;
 }
 
 .client-stories-box:hover{
@@ -54,7 +55,7 @@
 
 
 .client-stories-box h1{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: $primary-blue-darker;
     text-align: center;
@@ -82,25 +83,20 @@
     display: block;
     max-width: 170px;
     height: auto;
-    margin: 0 auto -1rem auto;
+    margin: 0 auto -2rem auto;
     
 }
-.client-stories-box .pay-check{
-    max-width: 170px;
-    height: auto;
-    margin: 3rem auto 5rem auto;
-    display: block;
-}
+
 .client-stories-box .matt-giggs{
     max-width: 180px;
     height: auto;
-    margin: 3.5rem auto 1.5rem auto;
+    margin: 3rem auto 2rem auto;
     display: block;
 }
 .client-stories-box .nff{
-    max-width: 150px;
+    max-width: 170px;
     height: auto;
-    margin: 3rem auto 3rem auto;
+    margin: 1rem auto 2em auto;
     display: block;
 }
 .client-stories-box .cintra{
@@ -112,11 +108,11 @@
 .client-stories-box .hanson{
     max-width: 170px;
     height: auto;
-    margin: 3.5rem auto 5rem auto;
+    margin: 2.5rem auto 3.5rem auto;
     display: block;
 }
 .client-stories-box .gibraltar{
-    max-width: 170px;
+    max-width: 130px;
     height: auto;
     margin: 0 auto 1rem auto;
     display: block;
@@ -124,11 +120,175 @@
 
 
 
+
+
+
+
 // Testimonials carousel 
 .carousel-container{
-    height: 800px;
+    position: relative;
+    height: auto;
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #fff;
+    background: $primary-blue-dark;
 }
+#testimonial_area{
+    padding: 3rem 0 0 0;
+    margin: 0 auto;
+    background: $primary-blue-dark;
+    width: 100%;
+    height: auto;
+}
+#testimonial_area .container{
+    margin: 0 auto;
+    padding: 7rem  0;
+    position: relative;
+    //width: 100%;
+    background: $primary-blue-dark;
+    height: auto;
+}
+
+#testimonial_area .container::before{
+    content: '\0022';
+    display: inline-block;
+    position: absolute;
+    color: $primary-pink;
+    left: 6%;
+    top: 0;
+    font-size: 12rem;
+    z-index: 2;
+}
+
+.box-area{
+    padding-bottom: 2rem;
+    position: relative;
+    display: block;
+    background: $primary-blue-dark;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box-area h5{
+    font-weight: 700;
+    color: $primary-pink;
+    text-align: left;
+    margin: 1rem 0 0 13%;
+    font-size: 1.3rem;
+}
+
+.box-area p{
+    font-size: 2rem;
+    padding: 1rem 13%;
+    text-align: left;
+    font-weight: 400;
+    color: $primary-white!important;
+    //line-height: 2.5rem;
+}
+.box-area span{
+    color: $primary-white;
+    display: block;
+    font-size: 1.1rem;
+    margin: 0 0 0 13%;
+    font-weight: 400;
+    text-align: left;
+    opacity: 0.6;
+    max-width: 40%;
+}
+
+.box-area .content{
+    color: $primary-blue-darker;
+}
+
+
+
+
+
+#testimonial_area .owl-nav{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: $primary-pink;
+    //border-radius: 50%;
+    text-align: center;
+    //background: #fff;
+    position: absolute;
+}
+
+#testimonial_area .owl-prev{
+    left: 30px;
+    top: -30px;
+}
+
+#testimonial_area .owl-next{
+    right: 30px;
+    top: -30px;
+}
+
+@media only screen and (max-width: 991px){
+    .owl-nav{
+        display: none;
+    }
+    .box-area p{
+        font-size: 1.4rem;
+    }
+    #testimonial_area .container::before{
+        font-size: 9rem;
+        left: 5%;
+        top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .owl-nav{
+        display: none;
+    }
+    .box-area{
+        text-align: center;
+    }
+    .client-stories-box:hover{
+        box-shadow: none;
+        transform: none;
+    }
+}
+
+
+
+
+
+/* CTA
+.stories-cta{
+    position: relative;
+    margin: 0 0 0 13%;
+      border: 2px solid $primary-pink;
+      background: $primary-pink;
+      color: $primary-white;
+      padding: 0.5em 2em;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      width: 17rem;
+      text-decoration: none;
+      font-style: normal;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+      &:hover {
+        background: $primary-blue;
+        color: $primary-white;
+        border: 2px solid $primary-blue;
+        //border: none;
+      }
+}
+
+.stories a{
+    text-decoration: none;
+}*/

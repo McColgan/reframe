@@ -37,7 +37,7 @@
     margin: 0;
     color: $primary-blue;
     font-weight: 700;
-    font-size: 2rem;
+    
     width: 40%;
 }
 .services ul{
@@ -95,8 +95,8 @@
 
 
 .services-questions-flexbox{
-    padding: 0;
-    margin: 5em auto;
+    padding: 5rem 1rem;
+    margin: auto;
     width: auto;
     max-width: 1200px;
     height: auto;
@@ -124,7 +124,7 @@
         height: 5px;
         background: $primary-blue;
         position: absolute;
-        right: -2rem;
+        right: -3rem;
         top: 50%;
     }
 }
@@ -144,8 +144,8 @@
 
 
 .question-box{  
-    margin: 0 4rem;
-    padding: 0;
+    margin: auto;
+    padding: 0 3rem;
     width: 50%;
     //height: 100%;
     //background: #fff;
@@ -163,12 +163,11 @@
 }
 
 .content-box{
-    margin: 0 4rem;
-    padding: 0;
+    margin: auto;
+    padding:  0 4rem;
     width: 50%;
-    //height: 100%;
     line-height: 1.4rem;
-    //background: #fff;
+    //background: rgb(205, 147, 147);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -203,4 +202,76 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
+}
+
+
+
+
+// MEDIA QUERIES
+
+
+@media (max-width: 768px){
+    .services-questions-flexbox{
+        flex-direction: column;
+        padding: 0;
+    }
+    .question-box{
+        width: 65%;
+        padding: 6rem 0 3rem 0;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+    .services-questions-flexbox:nth-child(2){
+        flex-direction: column;
+    }
+    .content-box{
+        width: 65%;
+        padding: 0 0 2rem 0;
+    }
+
+    .services-questions-flexbox:nth-child(1) .question-box{
+        h2::before{
+            display: none;
+        }
+    }
+    .services-questions-flexbox:nth-child(2) .question-box{
+        h2::before{
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .services-bg{
+       background-image: none;
+    }
+       .services h2, .services li{
+         width: 85%;
+         
+       }
+       .services h2{
+        padding: 5rem auto;
+       }
+        .services li{
+        
+        margin: 0 auto;
+        width: 85%;
+
+    }
+    .services-questions-container{
+        padding-top: 10rem;
+    }
+    .services-questions-container h1{
+        width: 75%;
+        margin: 5rem auto 0 auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .services-bg{
+        background-position: top right -15rem;
+    }
 }

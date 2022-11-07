@@ -34,3 +34,23 @@
     line-height: 2rem;
     font-weight: 400;
 }
+
+
+
+@media (max-width: 1120px){
+    .font-huge{
+        font-size: 4rem;
+    }
+    .font-h2 , .services h2{
+        font-size: 1.5rem;
+    }
+    .services li{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px){
+    .font-p1{
+        font-size: 1.1rem;
+    }
+    
+}

@@ -6,7 +6,7 @@
     height: 4em;
     z-index: 100;
     position: fixed;
-    border-bottom: 2px solid #f3f3f3;
+    //border-bottom: 2px solid $primary-blue-darker;
 }
 .header-container::after{
   content: '';
@@ -22,7 +22,7 @@
     background-image: url(/images/Reframe.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 300px 64px;
+    background-size: 200px 43px;
 }
 .reframe-nav{
     position: absolute;
@@ -34,19 +34,18 @@
     letter-spacing: 0.15em;
     padding: 0 0.2em;
     margin: 0.08em 0 0 0;
+    background: $primary-blue-dark;
 }
 .social-media-header{
     z-index: 1;
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: block;
     width: 8em;
     height: auto;
     margin: 0;
     padding: 0;
-    right: 6em;
-    top: 0.6em;
+    left: 1rem;
+    top: 0.8em;
 }
 .site-nav{
     margin: 0;
@@ -57,23 +56,24 @@
     top: 3.87em;
     height: 0px;
     overflow: hidden;
-    border-bottom: 2px solid #f3f3f3;
-    border-left: 2px solid #f3f3f3;
+    background: $primary-blue-dark;
+    //border-bottom: 2px solid #f3f3f3;
+    //border-left: 2px solid #f3f3f3;
     ul{
         margin: 0;
         padding: 0;
         list-style: none;
-        background: $primary-blue;
+        background: $primary-blue-dark;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 75vh;
+        height: 90vh;
         width: 40vw;
         min-width: 260px;
         li{
-            border-top: 1px solid rgba(247, 247, 247, 0.25);
+            //border-top: 1px solid rgba(247, 247, 247, 0.25);
             padding: 0;
-            height: 11vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             transition: all ease-in-out 350ms;
@@ -93,6 +93,7 @@
                 height: 100%;
                 align-items: center;
                 justify-content: center;
+                font-size: 1.3rem;
             }
             
         }
@@ -115,7 +116,7 @@
 }
 .site-nav li::before,
 .site-nav li::after{
-    background: $primary-blue;
+    //background: $primary-blue;
     color: #f3f3f3;
 }
 .site-nav a::before,
@@ -148,6 +149,7 @@
 .site-nav--open{
     height: auto;
     z-index: 1;
+    
 } 
 
 // DESKTOP NAV //
@@ -155,7 +157,7 @@
     .header-container{
         border: none;
         height: 5rem;
-        background: rgb(4,26,36, 1);
+        background: rgb(4,26,36, 0.8);
     }
     .reframe-nav{
         display: none;
@@ -166,7 +168,7 @@
     .site-nav{
         padding:0;
         max-width: 50rem;
-        margin: 0 auto;
+        margin-left: auto;
         height: 5rem;
         position: relative;
         top: 0;
@@ -235,7 +237,7 @@
     height: 30px;
     position: absolute;
     right: 3%;
-    top: 0.5em;
+    top: 0.75em;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -266,15 +268,15 @@
 }
 #nav-icon span:nth-child(1) {
     top: 0px;
-    background-color: #f3f3f3;
+    background-color: $primary-pink;
 }
 #nav-icon span:nth-child(2) {
     top: 18px;
-    background-color: #f3f3f3;
+    background-color: $primary-white;
 }
 #nav-icon span:nth-child(3) {
     top: 36px;
-    background-color: #f3f3f3;
+    background-color: $primary-blue;
 }
 #nav-icon.open span:nth-child(1) {
     top: 18px;

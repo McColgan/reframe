@@ -5,11 +5,11 @@ $(document).ready(function(){
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - $('.header-container').outerHeight()
-    }, 1500);
+    }, 500);
   });
   // Nav-Icon Animation
   $('#nav-icon').click(function(){
-    $('.site-nav').toggleClass('site-nav--open', 400);
+    $('.site-nav').toggleClass('site-nav--open', 800);
     $(this).toggleClass('open');
   });
   
