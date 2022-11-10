@@ -1,6 +1,5 @@
 .footer{
     width: 100%;
-    padding-top: 3rem;
     margin: 0;
     bottom: 0;
     height: auto;
@@ -10,20 +9,27 @@
 }
 
 
-
+// CONTACT SECTION  
 .footer-contact{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: auto;
-    width: 850px;
-    padding: 5rem 0;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    background-color: $primary-blue;
+}
+.footer-contact-box{
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
 }
 
 .footer-contact h1{
     position: relative;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin: 0 auto;
     padding: 0;
@@ -31,6 +37,48 @@
     //background: red;
 }
 
+// PINK CONTAINER
+.footer-contact-box:nth-of-type(1){
+    background-color: $primary-pink;
+    padding: 5rem 0;
+}
+.footer-contact-box:nth-of-type(1){
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        margin: 0 auto;
+        padding: 2rem 20%;
+    }
+    p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $primary-white;
+        padding: 0.5rem 20%;
+        opacity: 0.8;
+    }
+    p:nth-of-type(2), p:nth-of-type(3){
+        opacity: 0.9;
+        font-weight: 700;
+    }
+}
+// BLUE CONTAINER   
+.footer-contact-box:nth-of-type(2){
+    //background-color: $primary-blue-dark;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    h1{
+        padding-bottom: 3rem;
+    }
+}
+
+// GET IN TOUCH
 
 .footer-cta{
     display: block;
@@ -58,6 +106,9 @@
 .footer-contact a{
     text-decoration: none;
 }
+
+
+
 
 // ARROW
 .arrow{
@@ -96,14 +147,16 @@
 
 .footer-reframe {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-48%);
-    bottom: 6rem;
+    position: relative;
     font-family:'Work Sans', sans-serif;
     font-size: 2em;
     font-weight: 400;
     color: #f8f8f8;
+    margin: 0 auto;
+    padding: 5rem 0 2rem 0;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    //background: rgb(202, 124, 124);
 }
 
 
@@ -113,7 +166,7 @@
     display: block;
     padding: 0;
     margin: 0 auto;
-    //background: red;
+    //background: rgb(127, 90, 90);
 }
 .social-media-footer a .linkedin-icon{
     margin: 0 auto;
@@ -126,11 +179,12 @@
     letter-spacing: 0.35em;
     font-size: 1em;
     color: #f8f8f8;
-    margin: 5rem 0 0 0;
+    margin:  2rem auto 0 auto;
     padding: 0;
     text-align: center;
     font-weight: 300;
     opacity: 0.6;
+    //background: blue;
 }
 .footer p2{
     display: inline-block;
@@ -147,7 +201,46 @@
     padding-bottom: 3rem;
     padding-top: 0.5rem;
     opacity: 0.5;
+    //background: rgb(112, 112, 185);
 }
+
+
+
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1020px){
+    .footer-contact{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .footer-contact-box{
+        width: 100%;
+    }
+    .footer-contact-box:nth-of-type(1){
+        p{
+            font-size: 1.1rem;
+            margin: 0 auto;
+            padding: 0.5rem 10%;
+        }
+    }
+    .footer-contact-box:nth-of-type(2){
+        width: 100%;
+        padding: 5rem 10% 7rem 10%;
+        margin: 0 auto;
+        h1{
+            padding: 1rem 0 3rem 0;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
 @media (max-width: 920px){
     .arrow{
         height: 60px;
@@ -162,9 +255,7 @@
     }
 }
 @media (max-width: 968px){
-   .footer-contact{
-    flex-direction: column;
-   }
+  
    .footer-contact h1{
     margin: 0 auto 4rem auto;
    }
@@ -176,6 +267,11 @@
     }
     .footer-contact h1{
         font-size: 2.5rem;
+    }
+    .footer-contact-box:nth-of-type(1){
+        h1{
+            font-size: 2rem;
+        }
     }
 }
 
@@ -191,20 +287,14 @@
         margin: 0 auto;
     }
     .footer-reframe {
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-48%);
-        bottom: 5.5rem;
-        font-family:'Work Sans', sans-serif;
+        margin: 5rem  auto 2rem auto;
+        padding: 0;
         font-size: 1em;
         font-weight: 400;
         color: #f8f8f8;
     }
     .social-media-footer{
-        z-index: 1;
-        padding: 0 0 3rem 0;
-        margin: 0 auto;
-        //background: red;
+        margin: 0 auto 2rem auto;
+        
     }
 }

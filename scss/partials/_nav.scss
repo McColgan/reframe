@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200px 43px;
+    display: none;
 }
 .reframe-nav{
     position: absolute;
@@ -69,11 +70,11 @@
         justify-content: space-around;
         height: 90vh;
         width: 40vw;
-        min-width: 250px;
+        min-width: 260px;
         li{
             //border-top: 1px solid rgba(247, 247, 247, 0.25);
             padding: 0;
-            height: 90vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             transition: all ease-in-out 350ms;
@@ -86,16 +87,14 @@
                 font-weight: 400; 
                 
                 color: #f3f3f3;
-                //padding: -em;
+                padding: 1em;
                 margin: 0;
                 display: flex;
                 width: 100%;
                 height: 100%;
                 align-items: center;
                 justify-content: center;
-                font-size: 0.8rem;
-                letter-spacing: 2px;
-                text-transform: uppercase;
+                font-size: 1rem;
             }
             
         }
@@ -159,7 +158,7 @@
     .header-container{
         border: none;
         height: 5rem;
-        background: rgb(4,26,36, 0.9);
+        background: rgb(4,26,36, 1);
     }
     .reframe-nav{
         display: none;
@@ -215,6 +214,7 @@
         width: 200px;
         background-size: 150px 32px;
         background-position: center;
+        display: block  ç;
     }
     #nav-icon{
         display: none;
