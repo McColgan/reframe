@@ -213,17 +213,21 @@
 @media (max-width: 1020px){
     .footer-contact{
         flex-direction: column;
-        text-align: center;
+        background-color: $primary-blue-dark;
 
     }
     .footer-contact-box{
         width: 100%;
     }
     .footer-contact-box:nth-of-type(1){
+        h1{
+            text-align: center;
+        }
         p{
             font-size: 1.1rem;
             margin: 0 auto;
             padding: 0.5rem 10%;
+            text-align: center;
         }
     }
     .footer-contact-box:nth-of-type(2){
@@ -296,5 +300,15 @@
     .social-media-footer{
         margin: 0 auto 2rem auto;
         
+    }
+    .footer-contact-box:nth-of-type(1){
+        align-items: flex-start;
+        h1{
+            text-align: left;
+            padding: 2rem 10%;
+        }
+        p{
+            text-align: left;
+        }
     }
 }
