@@ -98,9 +98,9 @@
       cursor: pointer;
       transition: 300ms ease-in-out;
       &:hover {
-        background: $primary-blue;
+        background: $primary-blue-dark;
         color: $primary-white;
-        border: 2px solid $primary-blue;
+        border: 2px solid $primary-blue-dark;
       }
 }
 .footer-contact a{
@@ -215,6 +215,12 @@
         flex-direction: column;
         background-color: $primary-blue-dark;
 
+    }
+    .footer-cta{
+        &:hover{
+            background-color: $primary-blue;
+            border: 2px solid $primary-blue;
+        }
     }
     .footer-contact-box{
         width: 100%;
